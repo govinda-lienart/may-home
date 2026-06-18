@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mayhome Homestay — Hoi An, Vietnam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo">
+      <img src="media/logo/portal_logo.png" alt="Mayhome Homestay" />
+    </a>
+    <div class="nav-links">
+      <a href="#rooms">Rooms</a>
+      <a href="#location">Location</a>
+      <a href="#explore">Explore</a>
+      <a href="#contact" class="nav-cta">Book a Stay</a>
+    </div>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="#rooms" onclick="closeMenu()">Rooms</a>
+    <a href="#location" onclick="closeMenu()">Location</a>
+    <a href="#explore" onclick="closeMenu()">Explore</a>
+    <a href="#contact" onclick="closeMenu()">Book a Stay</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <img src="media/pictures_space/room_5/IMG_5380.jpg" alt="Mayhome Homestay" class="hero-img" />
+    <div class="hero-content">
+      <span class="eyebrow">Ha My · Between Da Nang &amp; Hoi An</span>
+      <img src="media/logo/yellow_logo_transparent.png" alt="Mayhome Homestay" class="hero-logo" />
+      <p>Where slow mornings, tropical gardens<br class="br-desktop"> and genuine warmth come together.</p>
+      <div class="hero-ctas">
+        <a href="#rooms" class="btn">Discover Rooms</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll">
+      <div class="scroll-arrow"></div>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container two-col">
+      <div class="text">
+        <span class="label">Welcome to May Home</span>
+        <h2>A home between<br><em>two worlds</em></h2>
+        <p>May Home is a small family guesthouse full of soul — vintage wood, bright yellow walls, tropical plants spilling from every corner, and a family who genuinely loves hosting.</p>
+        <p>We're not a hotel. We're a home. And we want you to feel that from the moment you walk in.</p>
+      </div>
+      <div class="img-stack">
+        <img src="media/pictures_space/room_5/IMG_5290.jpg" alt="May Home exterior" class="img-main" />
+        <img src="media/pictures_space/room_3/IMG_5085.jpg" alt="May Home interior" class="img-float" />
+      </div>
+    </div>
+  </section>
+
+  <!-- LONG STAY BANNER -->
+  <div class="stay-banner" id="stay">
+    <div class="container stay-inner">
+      <div class="stay-leaf">🌿</div>
+      <div class="stay-text">
+        <strong>We love long stays.</strong>
+        May Home is available for monthly rental — minimum 1 month. The perfect way to slow down, settle in, and truly live like a local in one of Vietnam's most magical corners. <em>Contact us and let's make it happen.</em>
+      </div>
+      <a href="#contact" class="btn btn-amber">Enquire Now</a>
+    </div>
+  </div>
+
+  <!-- ROOMS -->
+  <section class="section rooms-section" id="rooms">
+    <div class="container">
+      <span class="label center-label">Accommodation</span>
+      <h2 class="center">5 Rooms · 5 Feelings</h2>
+      <p class="lead center">Each room has its own character. All are private, all are loved.<br class="br-desktop">Click any room to see the gallery.</p>
+    </div>
+
+    <div class="room-list">
+
+      <div class="room-block" onclick="openGallery(0)" tabindex="0" role="button" aria-label="View Rooted Calm gallery">
+        <div class="room-block-img">
+          <img src="media/pictures_space/room_3/IMG_5095.jpg" alt="Rooted Calm" loading="lazy" />
+          <div class="room-block-img-overlay"><span>View gallery ↗</span></div>
+        </div>
+        <div class="room-block-info">
+          <div class="room-eyebrow">Ground floor &mdash; 01</div>
+          <h3>Rooted Calm</h3>
+          <p>Exposed brick, vintage wood, warm amber light. Grounding, quiet, deeply restful.</p>
+          <div class="room-tags">
+            <span class="room-tag">Exposed Brick</span>
+            <span class="room-tag">Vintage Wood</span>
+            <span class="room-tag">Private Bathroom</span>
+            <span class="room-tag">Garden View</span>
+          </div>
+          <div class="room-block-bottom">
+            <div class="room-price-big">$550 <em>/ month</em></div>
+            <a href="#contact" class="room-enquire-btn" onclick="event.stopPropagation()">Enquire / Book &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-block" onclick="openGallery(1)" tabindex="0" role="button" aria-label="View Morning Glow gallery">
+        <div class="room-block-img">
+          <img src="media/pictures_space/room_2/IMG_0946.jpg" alt="Morning Glow" loading="lazy" />
+          <div class="room-block-img-overlay"><span>View gallery ↗</span></div>
+        </div>
+        <div class="room-block-info">
+          <div class="room-eyebrow">1st floor &mdash; 02</div>
+          <h3>Morning Glow</h3>
+          <p>Yellow walls, coconut palms at the window. Wake up feeling like sunshine.</p>
+          <div class="room-tags">
+            <span class="room-tag">Yellow Walls</span>
+            <span class="room-tag">Palm View</span>
+            <span class="room-tag">Private Bathroom</span>
+            <span class="room-tag">Bright &amp; Airy</span>
+          </div>
+          <div class="room-block-bottom">
+            <div class="room-price-big">$650 <em>/ month</em></div>
+            <a href="#contact" class="room-enquire-btn" onclick="event.stopPropagation()">Enquire / Book &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-block" onclick="openGallery(2)" tabindex="0" role="button" aria-label="View Cozy Nest gallery">
+        <div class="room-block-img">
+          <img src="media/pictures_space/room_5/IMG_5341.jpg" alt="Cozy Nest" loading="lazy" />
+          <div class="room-block-img-overlay"><span>View gallery ↗</span></div>
+        </div>
+        <div class="room-block-info">
+          <div class="room-eyebrow">1st floor &mdash; 03</div>
+          <h3>Cozy Nest</h3>
+          <p>Wrapped in tropical greens, softly lit. Lush, intimate, and always cool.</p>
+          <div class="room-tags">
+            <span class="room-tag">Tropical Garden</span>
+            <span class="room-tag">Lush &amp; Green</span>
+            <span class="room-tag">Private Bathroom</span>
+            <span class="room-tag">Intimate</span>
+          </div>
+          <div class="room-block-bottom">
+            <div class="room-price-big">$600 <em>/ month</em></div>
+            <a href="#contact" class="room-enquire-btn" onclick="event.stopPropagation()">Enquire / Book &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-block" onclick="openGallery(3)" tabindex="0" role="button" aria-label="View Soft Breeze gallery">
+        <div class="room-block-img">
+          <img src="media/pictures_space/room_4/IMG_5145.jpg" alt="Soft Breeze" loading="lazy" />
+          <div class="room-block-img-overlay"><span>View gallery ↗</span></div>
+        </div>
+        <div class="room-block-info">
+          <div class="room-eyebrow">2nd floor &mdash; 04</div>
+          <h3>Soft Breeze</h3>
+          <p>Palm fronds frame every window. Airy, light-filled, with a gentle cross breeze.</p>
+          <div class="room-tags">
+            <span class="room-tag">Cross Breeze</span>
+            <span class="room-tag">Palm View</span>
+            <span class="room-tag">Private Bathroom</span>
+            <span class="room-tag">2nd Floor</span>
+          </div>
+          <div class="room-block-bottom">
+            <div class="room-price-big">$750 <em>/ month</em></div>
+            <a href="#contact" class="room-enquire-btn" onclick="event.stopPropagation()">Enquire / Book &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-block" onclick="openGallery(4)" tabindex="0" role="button" aria-label="View Little Corner gallery">
+        <div class="room-block-img">
+          <img src="media/pictures_space/room_4/IMG_5196.jpg" alt="Little Corner" loading="lazy" />
+          <div class="room-block-img-overlay"><span>View gallery ↗</span></div>
+        </div>
+        <div class="room-block-info">
+          <div class="room-eyebrow">2nd floor &mdash; 05</div>
+          <h3>Little Corner</h3>
+          <p>Quiet, compact, full of charm. A perfect hideaway for solo travellers or couples.</p>
+          <div class="room-tags">
+            <span class="room-tag">Compact</span>
+            <span class="room-tag">Quiet</span>
+            <span class="room-tag">Shared Bathroom</span>
+            <span class="room-tag">Best Value</span>
+          </div>
+          <div class="room-block-bottom">
+            <div class="room-price-big">$450 <em>/ month</em></div>
+            <a href="#contact" class="room-enquire-btn" onclick="event.stopPropagation()">Enquire / Book &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container">
+      <div class="amenities-strip">
+        <div class="amenity">✓ Free Wi-Fi</div>
+        <div class="amenity">✓ Air conditioning</div>
+        <div class="amenity">✓ Private bathroom</div>
+        <div class="amenity">✓ Daily breakfast</div>
+        <div class="amenity">✓ Laundry service</div>
+        <div class="amenity">✓ Shared kitchen</div>
+        <div class="amenity">✓ Garden &amp; terrace</div>
+        <div class="amenity">✓ Bicycle rental</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="section location-section" id="location">
+    <div class="container">
+      <span class="label center-label">Where we are</span>
+      <h2 class="center">The perfect base camp</h2>
+      <p class="lead center">We sit at a rare intersection — one footstep from the sea, yet close to two major cities. Everything is within reach, but you'll always have peace to come back to.</p>
+      <div class="loc-grid">
+        <div class="loc-card">
+          <div class="loc-icon">🏖</div>
+          <h3>Ha My Beach</h3>
+          <div class="loc-dist">1 min walk</div>
+          <p>Step outside and you're already there. A quiet, uncrowded stretch of sand — your private morning beach.</p>
+        </div>
+        <div class="loc-card">
+          <div class="loc-icon">🌊</div>
+          <h3>An Bang Beach</h3>
+          <div class="loc-dist">8 min by motorbike</div>
+          <p>One of Vietnam's most beloved beaches — beach bars, sunbeds, fresh seafood, and clear water.</p>
+        </div>
+        <div class="loc-card">
+          <div class="loc-icon">🏮</div>
+          <h3>Hoi An Old Town</h3>
+          <div class="loc-dist">10 min by motorbike</div>
+          <p>Lanterns, ancient streets, tailor shops, and the best bowl of cao lầu you'll ever taste.</p>
+        </div>
+        <div class="loc-card">
+          <div class="loc-icon">🌆</div>
+          <h3>Da Nang City</h3>
+          <div class="loc-dist">10 min by motorbike</div>
+          <p>International airport, Dragon Bridge, city restaurants, and everything you might need.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROPERTY GALLERY -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <span class="label center-label">The Space</span>
+      <h2 class="center">Life at May Home</h2>
+      <div class="photo-grid">
+        <img src="media/pictures_space/room_3/IMG_5088.jpg" alt="" loading="lazy" class="pg-tall" />
+        <img src="media/pictures_space/room_1/IMG_5077.jpg" alt="" loading="lazy" />
+        <img src="media/pictures_space/room_1/IMG_5074.jpg" alt="" loading="lazy" />
+        <img src="media/pictures_space/common_space/IMG_5120.jpg" alt="" loading="lazy" class="pg-wide" />
+        <img src="media/pictures_space/room_5/IMG_5355.jpg" alt="" loading="lazy" />
+        <img src="media/pictures_space/room_5/IMG_5338.jpg" alt="" loading="lazy" />
+        <img src="media/pictures_space/room_5/IMG_5452.jpg" alt="" loading="lazy" class="pg-tall" />
+        <img src="media/pictures_space/room_3/IMG_5083.jpg" alt="" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPLORE / TOURIST -->
+  <section class="section explore-section" id="explore">
+    <div class="container">
+      <span class="label center-label">Around us</span>
+      <h2 class="center">Things to Explore</h2>
+      <p class="lead center">You're in one of Vietnam's most breathtaking regions. The Central Coast has ancient history, dramatic mountains, pristine beaches, and world-class food — all within a short ride.</p>
+      <div class="explore-grid">
+        <div class="explore-card">
+          <img src="media/pictures_travel/images.jpeg" alt="The region around Hoi An" loading="lazy" />
+          <div class="explore-info">
+            <h3>The Central Coast</h3>
+            <p>Marble Mountains, My Son Sanctuary, Hai Van Pass, the Cham Islands — endless adventures from your front door.</p>
+          </div>
+        </div>
+        <div class="explore-card explore-text-card">
+          <div class="explore-list">
+            <div class="exp-item"><span class="exp-icon">🛵</span><div><strong>Hai Van Pass</strong><p>One of the world's great coastal drives. 45 min away.</p></div></div>
+            <div class="exp-item"><span class="exp-icon">⛵</span><div><strong>Cham Islands</strong><p>Snorkelling, diving, and pristine beaches. Day trip by boat.</p></div></div>
+            <div class="exp-item"><span class="exp-icon">🏛</span><div><strong>My Son Sanctuary</strong><p>Ancient Cham temple ruins in a jungle valley. 1hr away.</p></div></div>
+            <div class="exp-item"><span class="exp-icon">🍜</span><div><strong>Hoi An food scene</strong><p>White rose dumplings, banh mi, and cao lầu. 10 min away.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="contact-bg"></div>
+    <div class="container center">
+      <span class="label center-label light-label">Book your stay</span>
+      <h2>Ready to make yourself<br>at home?</h2>
+      <p>Drop us an email — we usually reply within a few hours. Tell us which room caught your eye, when you'd like to arrive, and how long you're thinking of staying.</p>
+      <a href="mailto:mayhome@gmail.com" class="btn btn-amber btn-lg">mayhome@gmail.com</a>
+      <p class="contact-location">📍 Ha My, Điện Bàn · Quảng Nam, Vietnam<br>Between Da Nang &amp; Hoi An · 1 min from the sea</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <img src="media/logo/portal_logo.png" alt="Mayhome" class="footer-logo" />
+    <p>© 2026 Mayhome Homestay · Ha My, Vietnam</p>
+    <p class="footer-sub">Built with love for slow travellers</p>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <div class="lb-backdrop" onclick="closeLightbox()"></div>
+    <button class="lb-close" onclick="closeLightbox()" aria-label="Close">&times;</button>
+    <button class="lb-prev" onclick="lbPrev()" aria-label="Previous">&#8592;</button>
+    <button class="lb-next" onclick="lbNext()" aria-label="Next">&#8594;</button>
+    <div class="lb-inner">
+      <img id="lb-img" src="" alt="" />
+      <div class="lb-caption" id="lb-caption"></div>
+    </div>
+  </div>
+
+  <script>
+    const galleries = [
+      { name: 'Rooted Calm',   imgs: ['media/pictures_space/room_3/IMG_5095.jpg','media/pictures_space/room_3/IMG_5085.jpg','media/pictures_space/room_3/IMG_5088.jpg','media/pictures_space/room_1/IMG_5074.jpg'] },
+      { name: 'Morning Glow',  imgs: ['media/pictures_space/room_2/IMG_0946.jpg','media/pictures_space/room_5/IMG_5290.jpg','media/pictures_space/room_5/IMG_5380.jpg','media/pictures_space/room_5/IMG_5355.jpg'] },
+      { name: 'Cozy Nest',     imgs: ['media/pictures_space/room_5/IMG_5341.jpg','media/pictures_space/room_1/IMG_5077.jpg','media/pictures_space/room_5/IMG_5338.jpg','media/pictures_space/room_3/IMG_5083.jpg'] },
+      { name: 'Soft Breeze',   imgs: ['media/pictures_space/room_5/IMG_5395.jpg','media/pictures_space/room_4/IMG_5196.jpg','media/pictures_space/room_5/IMG_5330.jpg','media/pictures_space/common_space/IMG_5120.jpg'] },
+      { name: 'Little Corner', imgs: ['media/pictures_space/room_4/IMG_5196.jpg','media/pictures_space/room_5/IMG_5322.jpg','media/pictures_space/room_5/IMG_5452.jpg','media/pictures_space/room_5/IMG_5383.jpg'] },
+    ];
+    let curGallery = 0, curIdx = 0;
+
+    function openGallery(roomIdx) {
+      curGallery = roomIdx; curIdx = 0;
+      showLbImg();
+      document.getElementById('lightbox').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function showLbImg() {
+      const g = galleries[curGallery];
+      const img = document.getElementById('lb-img');
+      img.style.opacity = 0;
+      img.src = g.imgs[curIdx];
+      img.onload = () => { img.style.opacity = 1; };
+      document.getElementById('lb-caption').textContent = g.name + '  ·  ' + (curIdx+1) + ' / ' + g.imgs.length;
+    }
+    function lbPrev() {
+      const g = galleries[curGallery];
+      curIdx = (curIdx - 1 + g.imgs.length) % g.imgs.length;
+      showLbImg();
+    }
+    function lbNext() {
+      const g = galleries[curGallery];
+      curIdx = (curIdx + 1) % g.imgs.length;
+      showLbImg();
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', e => {
+      if (!document.getElementById('lightbox').classList.contains('active')) return;
+      if (e.key === 'ArrowLeft')  lbPrev();
+      if (e.key === 'ArrowRight') lbNext();
+      if (e.key === 'Escape')     closeLightbox();
+    });
+
+    // Room card keyboard enter
+    document.querySelectorAll('.room-block').forEach((card, i) => {
+      card.addEventListener('keydown', e => { if (e.key === 'Enter') openGallery(i); });
+    });
+
+    // Sticky nav
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 80);
+    }, { passive: true });
+
+    // Mobile menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('nav-mobile');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+    function closeMenu() {
+      hamburger.classList.remove('open');
+      mobileNav.classList.remove('open');
+    }
+  </script>
+
+</body>
+</html>
