@@ -507,11 +507,10 @@ h2 {
 }
 
 .room-block-info p {
-  font-size: 1rem;
-  color: rgba(255,255,255,0.9);
+  font-size: 1.1rem;
+  color: #ffffff;
   line-height: 1.75;
   margin-bottom: 1.25rem;
-  transition: color 0.35s;
 }
 
 .room-tags {
@@ -532,11 +531,10 @@ h2 {
   transition: color 0.35s, border-color 0.35s;
 }
 
-/* Hover — all text lights up amber */
-.room-block:hover .room-eyebrow { color: rgba(197,156,90,0.7); }
+/* Hover — name and price light up amber */
 .room-block:hover .room-block-info h3 { color: #c59c5a; }
-.room-block:hover .room-block-info p { color: rgba(197,156,90,0.75); }
-.room-block:hover .room-tag { color: rgba(197,156,90,0.8); border-color: rgba(197,156,90,0.4); }
+.room-block:hover .room-price-big { color: #c59c5a; }
+.room-block:hover .room-price-big em { color: rgba(197,156,90,0.7); }
 
 .room-block-bottom {
   display: flex;
@@ -548,7 +546,7 @@ h2 {
   font-family: 'Playfair Display', serif;
   font-size: clamp(1.6rem, 2.5vw, 2rem);
   font-weight: 400;
-  color: #e4ddd4;
+  color: #ffffff;
   line-height: 1;
   white-space: nowrap;
   transition: color 0.35s;
@@ -564,9 +562,7 @@ h2 {
   transition: color 0.35s;
 }
 
-.room-block:hover .room-price-big { color: #c59c5a; }
-.room-block:hover .room-price-big em { color: rgba(197,156,90,0.6); }
-.room-block:hover .room-enquire-btn { border-color: rgba(197,156,90,0.6); color: #c59c5a; }
+.room-block:hover .room-enquire-btn { border-color: rgba(197,156,90,0.6); }
 
 .room-enquire-btn {
   display: inline-block;
@@ -831,6 +827,30 @@ footer p {
   font-style: italic;
   color: rgba(255,248,235,0.2) !important;
 }
+
+.footer-ig {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: rgba(255,248,235,0.5);
+  text-decoration: none;
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 1rem;
+  transition: color 0.2s;
+}
+.footer-ig:hover { color: var(--amber); }
+
+/* Nav Instagram icon */
+.nav-ig {
+  display: flex;
+  align-items: center;
+  color: rgba(255,255,255,0.75);
+  transition: color 0.2s;
+  flex-shrink: 0;
+}
+.nav.scrolled .nav-ig { color: var(--muted); }
+.nav-ig:hover { color: var(--amber); }
 
 /* ─── LIGHTBOX ──────────────────────────────────── */
 .lightbox {
