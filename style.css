@@ -196,8 +196,8 @@ img { display: block; max-width: 100%; }
   inset: 0;
   background: linear-gradient(
     160deg,
-    rgba(20,12,4,0.25) 0%,
-    rgba(20,12,4,0.55) 100%
+    rgba(20,12,4,0.65) 0%,
+    rgba(20,12,4,0.80) 100%
   );
   z-index: 1;
 }
@@ -896,7 +896,7 @@ footer p {
 
 .lb-caption {
   margin-top: 1rem;
-  color: rgba(255,248,235,0.55);
+  color: rgba(255,248,235,0.05);
   font-size: 0.85rem;
   letter-spacing: 0.1em;
   text-align: center;
