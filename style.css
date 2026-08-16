@@ -296,6 +296,21 @@ img { display: block; max-width: 100%; }
 
 .btn-lg { padding: 1rem 2.5rem; font-size: 0.95rem; }
 
+.contact-ctas {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #25d366;
+}
+.btn-whatsapp:hover { background: #1ebe59; }
+
 /* ─── LAYOUT ────────────────────────────────────── */
 .section { padding: 6rem 1.5rem; }
 
