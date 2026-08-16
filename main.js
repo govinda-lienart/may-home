@@ -3,7 +3,7 @@ const translations = {
   en: {
     'nav.rooms': 'Rooms', 'nav.location': 'Location', 'nav.explore': 'Explore', 'nav.book': 'Book a Stay',
     'hero.eyebrow': 'Ha My · Between Da Nang &amp; Hoi An',
-    'hero.desc': 'Nestled between the buzz of Da Nang and the ancient charm of Hoi An, Mayhome is a small escape we refurbished with our own hands and hearts - every corner chosen so you feel instantly at ease, just a few minutes\' walk from the beach.',
+    'hero.desc': 'A cozy home between old Hội An and vibrant Đà Nẵng, beside the sea.',
     'hero.cta1': 'Discover Rooms', 'hero.cta2': 'Get in Touch',
     'about.label': 'Welcome to MayHome.',
     'about.title': 'Not a hotel.<br><em>A home.</em>',
