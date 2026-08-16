@@ -229,11 +229,13 @@ img { display: block; max-width: 100%; }
 }
 
 .hero-content p {
-  font-size: clamp(1rem, 2.5vw, 1.2rem);
-  font-weight: 300;
-  line-height: 1.8;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.6;
   margin-bottom: 2.5rem;
-  opacity: 0.88;
+  opacity: 0.95;
 }
 
 .hero-ctas {
