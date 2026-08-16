@@ -58,7 +58,7 @@ const translations = {
     'faq.q9': 'Do you provide airport pickup?', 'faq.a9': "Yes — we can arrange a pickup from Đà Nẵng International Airport to May Home at an additional cost. Just include your arrival details in your enquiry and we'll sort everything out before you land.",
     'faq.q10': 'Can I use the washing machine?', 'faq.a10': 'Yes, there is a washing machine available for all guests. A small additional fee applies per use to cover water and electricity costs. Your host will share the current rate on arrival — it\'s very fairly priced.',
     'contact.label': 'Book your stay', 'contact.title': 'Ready to make yourself<br>at home?',
-    'contact.desc': 'Drop us an email — we usually reply within a few hours. Tell us which room caught your eye, when you\'d like to arrive, and how long you\'re thinking of staying.',
+    'contact.desc': 'Message us — we usually reply within a few hours. Tell us which room caught your eye, when you\'d like to arrive, and how long you\'re thinking of staying.',
     'contact.loc': '📍 Ha My, Điện Bàn · Quảng Nam, Vietnam<br>Between Da Nang &amp; Hoi An · 1 min from the sea',
     'footer.sub': 'Built with love for slow travellers',
   },
@@ -120,7 +120,7 @@ const translations = {
     'faq.q9': 'Có dịch vụ đón sân bay không?', 'faq.a9': 'Có — chúng tôi có thể sắp xếp đón từ Sân bay Quốc tế Đà Nẵng về May Home với chi phí thêm. Chỉ cần ghi thông tin đến trong yêu cầu của bạn và chúng tôi sẽ sắp xếp tất cả trước khi bạn đến.',
     'faq.q10': 'Tôi có thể dùng máy giặt không?', 'faq.a10': 'Có, có máy giặt dành cho tất cả khách. Một khoản phí nhỏ được áp dụng cho mỗi lần sử dụng để trang trải chi phí nước và điện. Chủ nhà sẽ thông báo mức giá hiện tại khi bạn đến — rất hợp lý.',
     'contact.label': 'Đặt phòng', 'contact.title': 'Sẵn sàng cảm thấy<br>như ở nhà chưa?',
-    'contact.desc': 'Gửi email cho chúng tôi — chúng tôi thường trả lời trong vài giờ. Cho chúng tôi biết phòng nào thu hút bạn, khi nào bạn muốn đến và bạn dự định ở bao lâu.',
+    'contact.desc': 'Nhắn tin cho chúng tôi — chúng tôi thường trả lời trong vài giờ. Cho chúng tôi biết phòng nào thu hút bạn, khi nào bạn muốn đến và bạn dự định ở bao lâu.',
     'contact.loc': '📍 Hà My, Điện Bàn · Quảng Nam, Việt Nam<br>Giữa Đà Nẵng &amp; Hội An · 1 phút từ biển',
     'footer.sub': 'Được tạo ra với tình yêu dành cho những người lữ hành chậm rãi',
   }
