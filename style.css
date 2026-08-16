@@ -635,6 +635,14 @@ h2 {
 .room-card .room-price-big { color: var(--bark); }
 .room-card .room-price-big em { color: var(--muted); }
 
+.room-price-note {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  margin-top: 0.6rem;
+}
+.room-card--featured .room-price-note { color: rgba(255,255,255,0.5); }
+.room-card .room-price-note { color: var(--muted); }
+
 /* Hover: featured amber shift */
 .room-card--featured:hover .room-card-info h3 { color: #c59c5a; }
 .room-card--featured:hover .room-price-big { color: #c59c5a; }
