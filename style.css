@@ -607,6 +607,13 @@ h2 {
 .room-card--featured .room-tag { border: 1px solid rgba(255,255,255,0.28); color: rgba(255,255,255,0.75); }
 .room-card .room-tag { border: 1px solid rgba(46,31,15,0.18); color: var(--muted); }
 
+.room-tags-service { margin-top: -0.4rem; }
+.room-tag-service {
+  border-style: dashed !important;
+}
+.room-card--featured .room-tag-service { border-color: rgba(200,144,26,0.55) !important; color: var(--amber-l); }
+.room-card .room-tag-service { border-color: rgba(200,144,26,0.45) !important; color: var(--amber); }
+
 /* Bottom: price + button */
 .room-card-bottom {
   display: flex;
@@ -635,14 +642,6 @@ h2 {
 .room-card .room-price-big { color: var(--bark); }
 .room-card .room-price-big em { color: var(--muted); }
 
-.room-price-note {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.68rem;
-  line-height: 1.3;
-  margin-top: 0.5rem;
-}
-.room-card--featured .room-price-note { color: rgba(255,255,255,0.5); }
-.room-card .room-price-note { color: var(--muted); }
 
 /* Hover: featured amber shift */
 .room-card--featured:hover .room-card-info h3 { color: #c59c5a; }
