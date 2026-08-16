@@ -170,9 +170,9 @@ function toggleFaq(btn) {
 
 /* ── GALLERIES ──────────────────────────────────── */
 const galleries = [
-  { name: 'Room 101',      imgs: ['media/pictures_space/room_101/IMG_2870.jpg','media/pictures_space/room_101/IMG_2872.jpg','media/pictures_space/room_101/IMG_2775.JPG','media/pictures_space/room_101/IMG_2770.JPG','media/pictures_space/room_101/IMG_2790.JPG','media/pictures_space/room_101/IMG_2791.JPG','media/pictures_space/room_101/IMG_2776.JPG'] },
-  { name: 'Room 201',      imgs: ['media/pictures_space/room_2/IMG_0946.jpg','media/pictures_space/room_5/IMG_5290.jpg','media/pictures_space/room_5/IMG_5380.jpg','media/pictures_space/room_5/IMG_5355.jpg'] },
-  { name: 'Cozy Nest',     imgs: ['media/pictures_space/room_5/IMG_5341.jpg','media/pictures_space/room_1/IMG_5077.jpg','media/pictures_space/room_5/IMG_5338.jpg','media/pictures_space/room_3/IMG_5083.jpg'] },
+  { name: 'Room 101',      imgs: ['media/pictures_space/room_101/IMG_2872.jpg','media/pictures_space/room_101/IMG_2870.jpg','media/pictures_space/room_101/IMG_2775.JPG','media/pictures_space/room_101/IMG_2770.JPG','media/pictures_space/room_101/IMG_2790.JPG','media/pictures_space/room_101/IMG_2791.JPG','media/pictures_space/room_101/IMG_2776.JPG'] },
+  { name: 'Room 201',      imgs: ['media/pictures_space/room_201/IMG_0946.jpg','media/pictures_space/room_201/IMG_5067.jpg','media/pictures_space/room_201/IMG_0978.jpg','media/pictures_space/room_201/IMG_0979.jpg','media/pictures_space/room_201/IMG_5070.jpg','media/pictures_space/room_201/IMG_5071.jpg'] },
+  { name: 'Cozy Nest',     imgs: ['media/pictures_space/room_203/IMG_5091.jpg','media/pictures_space/room_203/IMG_5078.jpg','media/pictures_space/room_203/IMG_5090.jpg','media/pictures_space/room_203/IMG_5083.jpg','media/pictures_space/room_203/IMG_5095.jpg'] },
   { name: 'Soft Breeze',   imgs: ['media/pictures_space/room_5/IMG_5395.jpg','media/pictures_space/room_4/IMG_5196.jpg','media/pictures_space/room_5/IMG_5330.jpg','media/pictures_space/common_space/IMG_5120.jpg'] },
   { name: 'Little Corner', imgs: ['media/pictures_space/room_4/IMG_5196.jpg','media/pictures_space/room_5/IMG_5322.jpg','media/pictures_space/room_5/IMG_5452.jpg','media/pictures_space/room_5/IMG_5383.jpg'] },
 ];
