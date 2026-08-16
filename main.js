@@ -11,7 +11,7 @@ const translations = {
     'about.p2': 'Five rooms, five distinct characters, each thoughtfully shaped to hold onto Hoi An\'s soul while moving at the pace of modern life.',
     'about.p3': 'Stay a few nights, or stay awhile. Short or long-term, from one month.',
     'about.tagline': 'For those who want to live in a place, not just visit it.',
-    'stay.text': '<strong>We love long stays.</strong> May Home is available for monthly rental — minimum 1 month. The perfect way to slow down, settle in, and truly live like a local in one of Vietnam\'s most magical corners. <em>Contact us and let\'s make it happen.</em>',
+    'stay.text': '<strong>We love every kind of stay.</strong> Mayhome is available for short visits and monthly rentals, whether you\'re passing through or settling in. <em>Contact us and let\'s make it happen.</em>',
     'stay.btn': 'Enquire Now',
     'rooms.label': 'Accommodation', 'rooms.title': '5 Rooms · 5 Feelings',
     'rooms.lead': 'Each room has its own character. All are private, all are loved.<br class="br-desktop">Click any room to see the gallery.',
