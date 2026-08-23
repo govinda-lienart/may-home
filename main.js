@@ -112,7 +112,7 @@ function setLang(lang) {
   document.documentElement.lang = lang;
 
   document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-  document.querySelectorAll(`#btn-${lang}, #btn-${lang}-m`).forEach(btn => btn.classList.add('active'));
+  document.querySelectorAll(`#btn-${lang}, #btn-${lang}-m, #btn-${lang}-nb`).forEach(btn => btn.classList.add('active'));
 }
 
 /* ── GALLERIES ──────────────────────────────────── */

@@ -120,6 +120,8 @@ img { display: block; max-width: 100%; }
 .nav.scrolled .lang-btn { color: var(--bark); }
 .lang-btn.active { background: var(--amber); color: #fff !important; }
 .lang-btn:hover:not(.active) { background: rgba(197,156,90,0.15); color: var(--amber); }
+.lang-switch-navbar { display: none; }
+
 .lang-switch-mobile {
   border-color: rgba(197,156,90,0.45);
   margin-left: 0;
@@ -1161,6 +1163,8 @@ footer p {
 @media (max-width: 700px) {
   .nav-links { display: none; }
   .nav-hamburger { display: flex; }
+  .lang-switch-navbar { display: flex; margin-left: auto; margin-right: 0.75rem; }
+  .lang-switch-navbar .lang-btn { padding: 4px 10px; font-size: 0.68rem; }
 
   .two-col { grid-template-columns: 1fr; gap: 3rem; }
   .img-float { display: none; }
