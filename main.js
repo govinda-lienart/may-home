@@ -168,11 +168,11 @@ function toggleFaq(btn) {
 
 /* ── GALLERIES ──────────────────────────────────── */
 const galleries = [
-  { name: 'Room 101',      imgs: ['media/pictures_space/room_101/IMG_2872.jpg','media/pictures_space/room_101/IMG_2870.jpg','media/pictures_space/room_101/IMG_2775.JPG','media/pictures_space/room_101/IMG_2770.JPG','media/pictures_space/room_101/IMG_2790.JPG','media/pictures_space/room_101/IMG_2791.JPG','media/pictures_space/room_101/IMG_2776.JPG'] },
-  { name: 'Room 201',      imgs: ['media/pictures_space/room_201/IMG_3260.jpg','media/pictures_space/room_201/IMG_2792.JPG','media/pictures_space/room_201/IMG_2789.JPG','media/pictures_space/room_201/IMG_3243.jpg'] },
-  { name: 'Room 202',      imgs: ['media/pictures_space/room_202/IMG_2881.jpg','media/pictures_space/room_202/Room_202_desk.jpg','media/pictures_space/room_202/IMG_desk_rain.jpg','media/pictures_space/room_202/IMG_2794.JPG','media/pictures_space/room_202/IMG_2782.JPG'] },
-  { name: 'Room 203',      imgs: ['media/pictures_space/room_5/IMG_5395.jpg','media/pictures_space/room_4/IMG_5196.jpg','media/pictures_space/room_5/IMG_5330.jpg','media/pictures_space/common_space/IMG_5120.jpg'] },
-  { name: 'Room 301',      imgs: ['media/pictures_space/room_4/IMG_5196.jpg','media/pictures_space/room_5/IMG_5322.jpg','media/pictures_space/room_5/IMG_5452.jpg','media/pictures_space/room_5/IMG_5383.jpg'] },
+  { name: 'Room 101', imgs: ['media/pictures_space/room_101/IMG_5067.jpg','media/pictures_space/room_101/IMG_5070.jpg','media/pictures_space/room_101/IMG_5072.jpg','media/pictures_space/room_101/IMG_5074.jpg','media/pictures_space/room_101/IMG_5075.jpg','media/pictures_space/room_101/IMG_5078.jpg','media/pictures_space/room_101/IMG_5079.jpg','media/pictures_space/room_101/IMG_5085.jpg','media/pictures_space/room_101/IMG_5086.jpg','media/pictures_space/room_101/IMG_5090.jpg','media/pictures_space/room_101/IMG_5096.jpg','media/pictures_space/room_101/IMG_5099.jpg','media/pictures_space/room_101/IMG_5243.jpg','media/pictures_space/room_101/IMG_5338.jpg','media/pictures_space/room_101/IMG_5344.jpg','media/pictures_space/room_101/IMG_5347.jpg','media/pictures_space/room_101/IMG_5350.jpg','media/pictures_space/room_101/IMG_5691.jpg','media/pictures_space/room_101/IMG_5694.jpg','media/pictures_space/room_101/IMG_5698.jpg','media/pictures_space/room_101/IMG_5725.jpg','media/pictures_space/room_101/IMG_5726.jpg','media/pictures_space/room_101/IMG_5731.jpg','media/pictures_space/room_101/IMG_5732.jpg','media/pictures_space/room_101/IMG_5740.jpg','media/pictures_space/room_101/IMG_5750.jpg','media/pictures_space/room_101/IMG_5757.jpg','media/pictures_space/room_101/IMG_5761.jpg','media/pictures_space/room_101/IMG_6003.jpg'] },
+  { name: 'Room 201', imgs: ['media/pictures_space/room_201/IMG_0978.jpg','media/pictures_space/room_201/IMG_0979.jpg','media/pictures_space/room_201/IMG_0980.jpg','media/pictures_space/room_201/IMG_0990.jpg','media/pictures_space/room_201/IMG_5177.jpg','media/pictures_space/room_201/IMG_5185.jpg','media/pictures_space/room_201/IMG_5186.jpg','media/pictures_space/room_201/IMG_5192.jpg','media/pictures_space/room_201/IMG_5599.jpg','media/pictures_space/room_201/IMG_6027.jpg'] },
+  { name: 'Room 202', imgs: ['media/pictures_space/room_202/IMG_0985.jpg','media/pictures_space/room_202/IMG_1317.jpg','media/pictures_space/room_202/IMG_1319.jpg','media/pictures_space/room_202/IMG_1322.jpg','media/pictures_space/room_202/IMG_5137.jpg','media/pictures_space/room_202/IMG_5151.jpg','media/pictures_space/room_202/IMG_5158.jpg','media/pictures_space/room_202/IMG_5355.jpg','media/pictures_space/room_202/IMG_5362.jpg','media/pictures_space/room_202/IMG_5678.jpg','media/pictures_space/room_202/IMG_5764.jpg','media/pictures_space/room_202/IMG_5770.jpg','media/pictures_space/room_202/IMG_5771.jpg'] },
+  { name: 'Room 203', imgs: ['media/pictures_space/room_203/IMG_5135.jpg','media/pictures_space/room_203/IMG_5138.jpg','media/pictures_space/room_203/IMG_5151.jpg','media/pictures_space/room_203/IMG_5174.jpg','media/pictures_space/room_203/IMG_5178.jpg','media/pictures_space/room_203/IMG_5196.jpg','media/pictures_space/room_203/IMG_5202.jpg','media/pictures_space/room_203/IMG_5212.jpg','media/pictures_space/room_203/IMG_5892.jpg','media/pictures_space/room_203/IMG_5906.jpg','media/pictures_space/room_203/IMG_5910.jpg','media/pictures_space/room_203/IMG_5915.jpg','media/pictures_space/room_203/IMG_6015.jpg'] },
+  { name: 'Room 301', imgs: ['media/pictures_space/room_301/IMG_0941.jpg','media/pictures_space/room_301/IMG_0946.jpg','media/pictures_space/room_301/IMG_0956.jpg','media/pictures_space/room_301/IMG_0957.jpg','media/pictures_space/room_301/IMG_0966.jpg','media/pictures_space/room_301/IMG_5218.jpg','media/pictures_space/room_301/IMG_5219.jpg','media/pictures_space/room_301/IMG_5231.jpg','media/pictures_space/room_301/IMG_5237.jpg','media/pictures_space/room_301/IMG_5238.jpg','media/pictures_space/room_301/IMG_5241.jpg','media/pictures_space/room_301/IMG_5249.jpg','media/pictures_space/room_301/IMG_5250.jpg','media/pictures_space/room_301/IMG_5253.jpg','media/pictures_space/room_301/IMG_5256.jpg','media/pictures_space/room_301/IMG_5258.jpg','media/pictures_space/room_301/IMG_5261.jpg','media/pictures_space/room_301/IMG_5263.jpg','media/pictures_space/room_301/IMG_5264.jpg','media/pictures_space/room_301/IMG_5271.jpg','media/pictures_space/room_301/IMG_5277.jpg','media/pictures_space/room_301/IMG_5290.jpg','media/pictures_space/room_301/IMG_5295.jpg','media/pictures_space/room_301/IMG_5305.jpg','media/pictures_space/room_301/IMG_5314.jpg','media/pictures_space/room_301/IMG_5372.jpg','media/pictures_space/room_301/IMG_5373.jpg','media/pictures_space/room_301/IMG_5375.jpg','media/pictures_space/room_301/IMG_5385.jpg','media/pictures_space/room_301/IMG_5386.jpg','media/pictures_space/room_301/IMG_5395.jpg','media/pictures_space/room_301/IMG_5399.jpg','media/pictures_space/room_301/IMG_5615.jpg','media/pictures_space/room_301/IMG_6043.jpg'] },
 ];
 let curGallery = 0, curIdx = 0;
 
@@ -214,6 +214,61 @@ document.addEventListener('keydown', e => {
 document.querySelectorAll('.room-block').forEach((card, i) => {
   card.addEventListener('keydown', e => { if (e.key === 'Enter') openGallery(i); });
 });
+
+/* ── HERO SLIDESHOW ─────────────────────────────── */
+/* Drop images named hero-1.jpg, hero-2.jpg, hero-3.jpg... (or .jpeg/.png/.webp)
+   into media/hero/ — they're picked up automatically, no code changes needed. */
+(function initHeroSlideshow() {
+  const container = document.getElementById('heroSlideshow');
+  if (!container) return;
+
+  const MAX_SLIDES = 50;
+  const EXTENSIONS = ['jpg', 'jpeg', 'png', 'webp'];
+  const SLIDE_DURATION = 6000; // ms each image stays fully visible
+
+  function probeImage(index) {
+    return new Promise(resolve => {
+      let extIdx = 0;
+      function tryNext() {
+        if (extIdx >= EXTENSIONS.length) return resolve(null);
+        const src = `media/hero/hero-${index}.${EXTENSIONS[extIdx]}`;
+        const img = new Image();
+        img.onload = () => resolve(src);
+        img.onerror = () => { extIdx++; tryNext(); };
+        img.src = src;
+      }
+      tryNext();
+    });
+  }
+
+  Promise.all(
+    Array.from({ length: MAX_SLIDES }, (_, i) => probeImage(i + 1))
+  ).then(results => {
+    const sources = results.filter(Boolean);
+    if (sources.length === 0) {
+      container.innerHTML = '<img src="media/pictures_space/room_101/IMG_5067.jpg" alt="Mayhome Homestay" class="hero-slide active" />';
+      return;
+    }
+
+    sources.forEach((src, i) => {
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = 'Mayhome Homestay';
+      img.className = 'hero-slide' + (i === 0 ? ' active' : '');
+      container.appendChild(img);
+    });
+
+    if (sources.length === 1) return;
+
+    const slides = container.querySelectorAll('.hero-slide');
+    let current = 0;
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, SLIDE_DURATION);
+  });
+})();
 
 /* ── UI ─────────────────────────────────────────── */
 const scrollTopBtn = document.getElementById('scrollTop');
