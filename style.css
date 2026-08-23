@@ -672,7 +672,8 @@ h2 {
 .room-card-bottom {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
   margin-top: auto;
 }
 
