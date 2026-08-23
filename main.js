@@ -249,7 +249,29 @@ document.querySelectorAll('.room-block').forEach((card, i) => {
   });
 })();
 
-/* ── COMMON SPACES FLIP GRID ───────────────────────── */
+/* ── COMMON SPACES PHOTOS ──────────────────────────── */
+const COMMON_SPACE_IMAGES = [
+  'IMG_5637.jpg','IMG_5423.jpg','IMG_5972.jpg','IMG_5542.jpg','IMG_5634.jpg',
+  'IMG_5546.jpg','IMG_5988.jpg','IMG_5143.jpg','IMG_5380.jpg','IMG_5244-2.jpg',
+  'IMG_5948.jpg','IMG_5961.jpg','IMG_5535-2.jpg','IMG_5244.jpg','IMG_5247.jpg',
+  'IMG_5535.jpg','IMG_5125.jpg','IMG_5322.jpg','IMG_5646.jpg','IMG_5120.jpg',
+  'IMG_5122.jpg','IMG_5452.jpg','IMG_6007.jpg','IMG_5080.jpg','IMG_5311.jpg',
+  'IMG_5111.jpg','IMG_5299.jpg','IMG_5302.jpg','IMG_2875.jpg','IMG_5117.jpg',
+  'IMG_5102.jpg','IMG_5165.jpg','IMG_5415.jpg','IMG_5978.jpg','IMG_5985.jpg',
+  'IMG_5604.jpg','IMG_5410.jpg','IMG_5404.jpg','IMG_5982.jpg','IMG_5954.jpg',
+  'IMG_5405.jpg',
+].map(f => `media/pictures_space/common_space/${f}`);
+
+function shuffledCommonSpaceImages() {
+  const shuffled = COMMON_SPACE_IMAGES.slice();
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
+/* ── COMMON SPACES FLIP GRID (desktop/tablet) ──────── */
 /* Each of the 8 grid cells flips like a card, revealing the next photo from
    media/pictures_space/common_space/. Cells flip on staggered timers so the
    whole pool of photos surfaces gradually rather than all at once. */
@@ -257,24 +279,7 @@ document.querySelectorAll('.room-block').forEach((card, i) => {
   const grid = document.getElementById('commonSpaceGrid');
   if (!grid) return;
 
-  const COMMON_SPACE_IMAGES = [
-    'IMG_5637.jpg','IMG_5423.jpg','IMG_5972.jpg','IMG_5542.jpg','IMG_5634.jpg',
-    'IMG_5546.jpg','IMG_5988.jpg','IMG_5143.jpg','IMG_5380.jpg','IMG_5244-2.jpg',
-    'IMG_5948.jpg','IMG_5961.jpg','IMG_5535-2.jpg','IMG_5244.jpg','IMG_5247.jpg',
-    'IMG_5535.jpg','IMG_5125.jpg','IMG_5322.jpg','IMG_5646.jpg','IMG_5120.jpg',
-    'IMG_5122.jpg','IMG_5452.jpg','IMG_6007.jpg','IMG_5080.jpg','IMG_5311.jpg',
-    'IMG_5111.jpg','IMG_5299.jpg','IMG_5302.jpg','IMG_2875.jpg','IMG_5117.jpg',
-    'IMG_5102.jpg','IMG_5165.jpg','IMG_5415.jpg','IMG_5978.jpg','IMG_5985.jpg',
-    'IMG_5604.jpg','IMG_5410.jpg','IMG_5404.jpg','IMG_5982.jpg','IMG_5954.jpg',
-    'IMG_5405.jpg',
-  ].map(f => `media/pictures_space/common_space/${f}`);
-
-  const shuffled = COMMON_SPACE_IMAGES.slice();
-  for (let i = shuffled.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-  }
-
+  const shuffled = shuffledCommonSpaceImages();
   const cells = Array.from(grid.querySelectorAll('.flip-cell'));
   const pools = cells.map(() => []);
   shuffled.forEach((src, i) => pools[i % cells.length].push(src));
@@ -301,6 +306,52 @@ document.querySelectorAll('.room-block').forEach((card, i) => {
       nextIndex = (nextIndex + 1) % pool.length;
     }, 9000 + i * 1400);
   });
+})();
+
+/* ── COMMON SPACES SLIDESHOW (mobile) ──────────────── */
+/* Below 720px the flip-grid is hidden in favour of one full-width photo at a
+   time, crossfading automatically, with arrows for manual control. */
+(function initCommonSpaceMobileSlideshow() {
+  const container = document.getElementById('commonSpaceMobileSlideshow');
+  if (!container) return;
+  const track = container.querySelector('.mobile-slideshow-track');
+  const prevBtn = container.querySelector('.mobile-slide-prev');
+  const nextBtn = container.querySelector('.mobile-slide-next');
+
+  const sources = shuffledCommonSpaceImages();
+  sources.forEach((src, i) => {
+    const img = document.createElement('img');
+    img.src = src;
+    img.alt = 'Mayhome Homestay common space';
+    img.className = 'mobile-slide' + (i === 0 ? ' active' : '');
+    track.appendChild(img);
+  });
+
+  const slides = Array.from(track.querySelectorAll('.mobile-slide'));
+  if (slides.length === 0) return;
+
+  let current = 0;
+  let timer = null;
+
+  function goTo(index) {
+    slides[current].classList.remove('active');
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.add('active');
+  }
+
+  function startAuto() {
+    timer = setInterval(() => goTo(current + 1), 5000);
+  }
+
+  function restartAuto() {
+    if (timer) clearInterval(timer);
+    startAuto();
+  }
+
+  if (slides.length > 1) startAuto();
+
+  prevBtn.addEventListener('click', () => { goTo(current - 1); restartAuto(); });
+  nextBtn.addEventListener('click', () => { goTo(current + 1); restartAuto(); });
 })();
 
 /* ── UI ─────────────────────────────────────────── */
