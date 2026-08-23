@@ -317,18 +317,24 @@ img { display: block; max-width: 100%; }
   flex-wrap: wrap;
 }
 
-.btn-whatsapp {
+.btn-zalo svg text { text-transform: none; }
+
+.btn-whatsapp,
+.btn-zalo {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 200px;
+  border-radius: 999px;
+}
+
+.btn-whatsapp {
   background: #25d366;
 }
 .btn-whatsapp:hover { background: #1ebe59; }
 
 .btn-zalo {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
   background: #0068ff;
 }
 .btn-zalo:hover { background: #0052cc; }
@@ -875,12 +881,12 @@ h2 {
 /* ─── CONTACT ───────────────────────────────────── */
 .contact-section {
   background: linear-gradient(150deg, #2e1f0f 0%, #3d2a14 50%, #2a1c0a 100%);
-  padding: 7rem 1.5rem;
+  padding: 4.5rem 1.5rem;
   color: #fff;
 }
 
 .contact-section h2 {
-  color: #fff;
+  color: var(--amber-l);
   font-size: clamp(2rem, 4vw, 3rem);
   margin-bottom: 1.5rem;
 }
@@ -891,13 +897,6 @@ h2 {
   line-height: 1.85;
   max-width: 520px;
   margin: 0 auto 2.5rem;
-}
-
-.contact-location {
-  margin-top: 2rem !important;
-  font-size: 0.88rem !important;
-  color: rgba(255,248,235,0.45) !important;
-  line-height: 1.8 !important;
 }
 
 /* ─── SCROLL TO TOP ─────────────────────────────── */

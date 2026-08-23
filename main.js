@@ -41,7 +41,6 @@ const translations = {
     'gallery.label': 'Common Areas', 'gallery.title': 'Common Spaces',
     'contact.label': 'Book your stay', 'contact.title': 'Ready to make yourself<br>at home?',
     'contact.desc': 'Message us — we usually reply within a few hours. Tell us which room caught your eye, when you\'d like to arrive, and how long you\'re thinking of staying.',
-    'contact.loc': '📍 Ha My, Điện Bàn · Quảng Nam, Vietnam<br>Between Da Nang &amp; Hoi An · 1 min from the sea',
     'footer.sub': 'Built with love for slow travellers',
   },
   vi: {
@@ -82,7 +81,6 @@ const translations = {
     'gallery.label': 'Không Gian Chung', 'gallery.title': 'Không Gian Chung',
     'contact.label': 'Đặt phòng', 'contact.title': 'Sẵn sàng cảm thấy<br>như ở nhà chưa?',
     'contact.desc': 'Nhắn tin cho chúng tôi — chúng tôi thường trả lời trong vài giờ. Cho chúng tôi biết phòng nào thu hút bạn, khi nào bạn muốn đến và bạn dự định ở bao lâu.',
-    'contact.loc': '📍 Hà My, Điện Bàn · Quảng Nam, Việt Nam<br>Giữa Đà Nẵng &amp; Hội An · 1 phút từ biển',
     'footer.sub': 'Được tạo ra với tình yêu dành cho những người lữ hành chậm rãi',
   }
 };
