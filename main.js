@@ -1,7 +1,7 @@
 /* ── TRANSLATIONS ───────────────────────────────── */
 const translations = {
   en: {
-    'nav.rooms': 'Rooms', 'nav.location': 'Location', 'nav.explore': 'Explore', 'nav.book': 'Book a Stay',
+    'nav.rooms': 'Rooms', 'nav.location': 'Location', 'nav.book': 'Book a Stay',
     'hero.eyebrow': 'Ha My · Between Da Nang &amp; Hoi An',
     'hero.desc': 'A cozy home between old Hội An and vibrant Đà Nẵng, beside the sea.',
     'hero.cta1': 'Discover Rooms', 'hero.cta2': 'Get in Touch',
@@ -38,14 +38,7 @@ const translations = {
     'loc.h2': 'An Bang Beach', 'loc.d2': '8 min by motorbike', 'loc.p2': 'One of Vietnam\'s most beloved beaches — beach bars, sunbeds, fresh seafood, and clear water.',
     'loc.h3': 'Hoi An Old Town', 'loc.d3': '10 min by motorbike', 'loc.p3': 'Lanterns, ancient streets, tailor shops, and the best bowl of cao lầu you\'ll ever taste.',
     'loc.h4': 'Da Nang City', 'loc.d4': '10 min by motorbike', 'loc.p4': 'International airport, Dragon Bridge, city restaurants, and everything you might need.',
-    'gallery.label': 'The Space', 'gallery.title': 'Life at May Home',
-    'exp.label': 'Around us', 'exp.title': 'Things to Explore',
-    'exp.lead': 'You\'re in one of Vietnam\'s most breathtaking regions. The Central Coast has ancient history, dramatic mountains, pristine beaches, and world-class food — all within a short ride.',
-    'exp.h1': 'The Central Coast', 'exp.p1': 'Marble Mountains, My Son Sanctuary, Hai Van Pass, the Cham Islands — endless adventures from your front door.',
-    'exp.i1h': 'Hai Van Pass', 'exp.i1p': 'One of the world\'s great coastal drives. 45 min away.',
-    'exp.i2h': 'Cham Islands', 'exp.i2p': 'Snorkelling, diving, and pristine beaches. Day trip by boat.',
-    'exp.i3h': 'My Son Sanctuary', 'exp.i3p': 'Ancient Cham temple ruins in a jungle valley. 1hr away.',
-    'exp.i4h': 'Hoi An food scene', 'exp.i4p': 'White rose dumplings, banh mi, and cao lầu. 10 min away.',
+    'gallery.label': 'Common Areas', 'gallery.title': 'Common Spaces',
     'process.label': 'The Process', 'process.title': 'How Booking Works',
     'process.h1': 'Enquire &amp; Get Confirmed', 'process.p1': 'Submit your details and preferred dates. We confirm availability and send your booking confirmation within 24 hours.',
     'process.h2': 'Pay Security Deposit', 'process.p2': 'Pay your refundable security deposit within 72 hours of confirmation to secure your room. Fully returned at checkout.',
@@ -68,7 +61,7 @@ const translations = {
     'footer.sub': 'Built with love for slow travellers',
   },
   vi: {
-    'nav.rooms': 'Phòng', 'nav.location': 'Vị trí', 'nav.explore': 'Khám phá', 'nav.book': 'Đặt phòng',
+    'nav.rooms': 'Phòng', 'nav.location': 'Vị trí', 'nav.book': 'Đặt phòng',
     'hero.eyebrow': 'Hà My · Giữa Đà Nẵng &amp; Hội An',
     'hero.desc': 'Một tổ ấm nhỏ xinh giữa phố cổ Hội An và Đà Nẵng sôi động, ngay cạnh biển.',
     'hero.cta1': 'Khám phá phòng', 'hero.cta2': 'Liên hệ',
@@ -101,14 +94,7 @@ const translations = {
     'loc.h2': 'Bãi biển An Bàng', 'loc.d2': '8 phút xe máy', 'loc.p2': 'Một trong những bãi biển được yêu thích nhất Việt Nam — quán bar bãi biển, ghế tắm nắng, hải sản tươi và nước trong xanh.',
     'loc.h3': 'Phố cổ Hội An', 'loc.d3': '10 phút xe máy', 'loc.p3': 'Đèn lồng, phố cổ, tiệm may và tô cao lầu ngon nhất bạn từng thưởng thức.',
     'loc.h4': 'Thành phố Đà Nẵng', 'loc.d4': '10 phút xe máy', 'loc.p4': 'Sân bay quốc tế, Cầu Rồng, nhà hàng thành phố và mọi thứ bạn cần.',
-    'gallery.label': 'Không Gian', 'gallery.title': 'Cuộc Sống tại May Home',
-    'exp.label': 'Xung quanh', 'exp.title': 'Điều cần Khám phá',
-    'exp.lead': 'Bạn đang ở một trong những vùng đẹp nhất Việt Nam. Miền Trung có lịch sử cổ đại, núi non hùng vĩ, bãi biển hoang sơ và ẩm thực đẳng cấp thế giới — tất cả chỉ trong một chuyến đi ngắn.',
-    'exp.h1': 'Miền Trung Việt Nam', 'exp.p1': 'Ngũ Hành Sơn, Thánh địa Mỹ Sơn, Đèo Hải Vân, Cù Lao Chàm — vô số cuộc phiêu lưu từ cửa nhà bạn.',
-    'exp.i1h': 'Đèo Hải Vân', 'exp.i1p': 'Một trong những cung đường ven biển vĩ đại nhất thế giới. Cách 45 phút.',
-    'exp.i2h': 'Cù Lao Chàm', 'exp.i2p': 'Lặn ngắm san hô, lặn biển và bãi biển hoang sơ. Đi về trong ngày bằng thuyền.',
-    'exp.i3h': 'Thánh địa Mỹ Sơn', 'exp.i3p': 'Đền tháp Chăm cổ đại giữa thung lũng rừng rậm. Cách 1 tiếng.',
-    'exp.i4h': 'Ẩm thực Hội An', 'exp.i4p': 'Bánh bao vạc, bánh mì và cao lầu. Cách 10 phút.',
+    'gallery.label': 'Không Gian Chung', 'gallery.title': 'Không Gian Chung',
     'process.label': 'Quy Trình', 'process.title': 'Cách Đặt Phòng',
     'process.h1': 'Liên hệ &amp; Xác nhận', 'process.p1': 'Gửi thông tin và ngày mong muốn. Chúng tôi xác nhận phòng trống và gửi xác nhận đặt phòng trong vòng 24 giờ.',
     'process.h2': 'Thanh toán tiền đặt cọc', 'process.p2': 'Thanh toán tiền đặt cọc hoàn lại trong vòng 72 giờ sau xác nhận để giữ phòng. Hoàn trả đầy đủ khi trả phòng.',
@@ -168,11 +154,11 @@ function toggleFaq(btn) {
 
 /* ── GALLERIES ──────────────────────────────────── */
 const galleries = [
-  { name: 'Room 101', imgs: ['media/pictures_space/room_101/IMG_5067.jpg','media/pictures_space/room_101/IMG_5070.jpg','media/pictures_space/room_101/IMG_5072.jpg','media/pictures_space/room_101/IMG_5074.jpg','media/pictures_space/room_101/IMG_5075.jpg','media/pictures_space/room_101/IMG_5078.jpg','media/pictures_space/room_101/IMG_5079.jpg','media/pictures_space/room_101/IMG_5085.jpg','media/pictures_space/room_101/IMG_5086.jpg','media/pictures_space/room_101/IMG_5090.jpg','media/pictures_space/room_101/IMG_5096.jpg','media/pictures_space/room_101/IMG_5099.jpg','media/pictures_space/room_101/IMG_5243.jpg','media/pictures_space/room_101/IMG_5338.jpg','media/pictures_space/room_101/IMG_5344.jpg','media/pictures_space/room_101/IMG_5347.jpg','media/pictures_space/room_101/IMG_5350.jpg','media/pictures_space/room_101/IMG_5691.jpg','media/pictures_space/room_101/IMG_5694.jpg','media/pictures_space/room_101/IMG_5698.jpg','media/pictures_space/room_101/IMG_5725.jpg','media/pictures_space/room_101/IMG_5726.jpg','media/pictures_space/room_101/IMG_5731.jpg','media/pictures_space/room_101/IMG_5732.jpg','media/pictures_space/room_101/IMG_5740.jpg','media/pictures_space/room_101/IMG_5750.jpg','media/pictures_space/room_101/IMG_5757.jpg','media/pictures_space/room_101/IMG_5761.jpg','media/pictures_space/room_101/IMG_6003.jpg'] },
-  { name: 'Room 201', imgs: ['media/pictures_space/room_201/IMG_0978.jpg','media/pictures_space/room_201/IMG_0979.jpg','media/pictures_space/room_201/IMG_0980.jpg','media/pictures_space/room_201/IMG_0990.jpg','media/pictures_space/room_201/IMG_5177.jpg','media/pictures_space/room_201/IMG_5185.jpg','media/pictures_space/room_201/IMG_5186.jpg','media/pictures_space/room_201/IMG_5192.jpg','media/pictures_space/room_201/IMG_5599.jpg','media/pictures_space/room_201/IMG_6027.jpg'] },
-  { name: 'Room 202', imgs: ['media/pictures_space/room_202/IMG_0985.jpg','media/pictures_space/room_202/IMG_1317.jpg','media/pictures_space/room_202/IMG_1319.jpg','media/pictures_space/room_202/IMG_1322.jpg','media/pictures_space/room_202/IMG_5137.jpg','media/pictures_space/room_202/IMG_5151.jpg','media/pictures_space/room_202/IMG_5158.jpg','media/pictures_space/room_202/IMG_5355.jpg','media/pictures_space/room_202/IMG_5362.jpg','media/pictures_space/room_202/IMG_5678.jpg','media/pictures_space/room_202/IMG_5764.jpg','media/pictures_space/room_202/IMG_5770.jpg','media/pictures_space/room_202/IMG_5771.jpg'] },
-  { name: 'Room 203', imgs: ['media/pictures_space/room_203/IMG_5135.jpg','media/pictures_space/room_203/IMG_5138.jpg','media/pictures_space/room_203/IMG_5151.jpg','media/pictures_space/room_203/IMG_5174.jpg','media/pictures_space/room_203/IMG_5178.jpg','media/pictures_space/room_203/IMG_5196.jpg','media/pictures_space/room_203/IMG_5202.jpg','media/pictures_space/room_203/IMG_5212.jpg','media/pictures_space/room_203/IMG_5892.jpg','media/pictures_space/room_203/IMG_5906.jpg','media/pictures_space/room_203/IMG_5910.jpg','media/pictures_space/room_203/IMG_5915.jpg','media/pictures_space/room_203/IMG_6015.jpg'] },
-  { name: 'Room 301', imgs: ['media/pictures_space/room_301/IMG_0941.jpg','media/pictures_space/room_301/IMG_0946.jpg','media/pictures_space/room_301/IMG_0956.jpg','media/pictures_space/room_301/IMG_0957.jpg','media/pictures_space/room_301/IMG_0966.jpg','media/pictures_space/room_301/IMG_5218.jpg','media/pictures_space/room_301/IMG_5219.jpg','media/pictures_space/room_301/IMG_5231.jpg','media/pictures_space/room_301/IMG_5237.jpg','media/pictures_space/room_301/IMG_5238.jpg','media/pictures_space/room_301/IMG_5241.jpg','media/pictures_space/room_301/IMG_5249.jpg','media/pictures_space/room_301/IMG_5250.jpg','media/pictures_space/room_301/IMG_5253.jpg','media/pictures_space/room_301/IMG_5256.jpg','media/pictures_space/room_301/IMG_5258.jpg','media/pictures_space/room_301/IMG_5261.jpg','media/pictures_space/room_301/IMG_5263.jpg','media/pictures_space/room_301/IMG_5264.jpg','media/pictures_space/room_301/IMG_5271.jpg','media/pictures_space/room_301/IMG_5277.jpg','media/pictures_space/room_301/IMG_5290.jpg','media/pictures_space/room_301/IMG_5295.jpg','media/pictures_space/room_301/IMG_5305.jpg','media/pictures_space/room_301/IMG_5314.jpg','media/pictures_space/room_301/IMG_5372.jpg','media/pictures_space/room_301/IMG_5373.jpg','media/pictures_space/room_301/IMG_5375.jpg','media/pictures_space/room_301/IMG_5385.jpg','media/pictures_space/room_301/IMG_5386.jpg','media/pictures_space/room_301/IMG_5395.jpg','media/pictures_space/room_301/IMG_5399.jpg','media/pictures_space/room_301/IMG_5615.jpg','media/pictures_space/room_301/IMG_6043.jpg'] },
+  { name: 'Room 101', imgs: ['media/pictures_space/room_101/IMG_5725.jpg','media/pictures_space/room_101/IMG_5067.jpg','media/pictures_space/room_101/IMG_5070.jpg','media/pictures_space/room_101/IMG_5072.jpg','media/pictures_space/room_101/IMG_5074.jpg','media/pictures_space/room_101/IMG_5075.jpg','media/pictures_space/room_101/IMG_5078.jpg','media/pictures_space/room_101/IMG_5079.jpg','media/pictures_space/room_101/IMG_5085.jpg','media/pictures_space/room_101/IMG_5086.jpg','media/pictures_space/room_101/IMG_5090.jpg','media/pictures_space/room_101/IMG_5096.jpg','media/pictures_space/room_101/IMG_5099.jpg','media/pictures_space/room_101/IMG_5243.jpg','media/pictures_space/room_101/IMG_5338.jpg','media/pictures_space/room_101/IMG_5344.jpg','media/pictures_space/room_101/IMG_5347.jpg','media/pictures_space/room_101/IMG_5350.jpg','media/pictures_space/room_101/IMG_5691.jpg','media/pictures_space/room_101/IMG_5694.jpg','media/pictures_space/room_101/IMG_5698.jpg','media/pictures_space/room_101/IMG_5726.jpg','media/pictures_space/room_101/IMG_5731.jpg','media/pictures_space/room_101/IMG_5732.jpg','media/pictures_space/room_101/IMG_5740.jpg','media/pictures_space/room_101/IMG_5750.jpg','media/pictures_space/room_101/IMG_5757.jpg','media/pictures_space/room_101/IMG_5761.jpg','media/pictures_space/room_101/IMG_6003.jpg'] },
+  { name: 'Room 201', imgs: ['media/pictures_space/room_201/IMG_5185.jpg','media/pictures_space/room_201/IMG_0978.jpg','media/pictures_space/room_201/IMG_0979.jpg','media/pictures_space/room_201/IMG_0980.jpg','media/pictures_space/room_201/IMG_0990.jpg','media/pictures_space/room_201/IMG_5177.jpg','media/pictures_space/room_201/IMG_5186.jpg','media/pictures_space/room_201/IMG_5192.jpg','media/pictures_space/room_201/IMG_5599.jpg','media/pictures_space/room_201/IMG_6027.jpg'] },
+  { name: 'Room 202', imgs: ['media/pictures_space/room_202/IMG_5158.jpg','media/pictures_space/room_202/IMG_0985.jpg','media/pictures_space/room_202/IMG_1317.jpg','media/pictures_space/room_202/IMG_1319.jpg','media/pictures_space/room_202/IMG_1322.jpg','media/pictures_space/room_202/IMG_5137.jpg','media/pictures_space/room_202/IMG_5151.jpg','media/pictures_space/room_202/IMG_5355.jpg','media/pictures_space/room_202/IMG_5362.jpg','media/pictures_space/room_202/IMG_5678.jpg','media/pictures_space/room_202/IMG_5764.jpg','media/pictures_space/room_202/IMG_5770.jpg','media/pictures_space/room_202/IMG_5771.jpg'] },
+  { name: 'Room 203', imgs: ['media/pictures_space/room_203/IMG_5910.jpg','media/pictures_space/room_203/IMG_5135.jpg','media/pictures_space/room_203/IMG_5138.jpg','media/pictures_space/room_203/IMG_5151.jpg','media/pictures_space/room_203/IMG_5174.jpg','media/pictures_space/room_203/IMG_5178.jpg','media/pictures_space/room_203/IMG_5196.jpg','media/pictures_space/room_203/IMG_5202.jpg','media/pictures_space/room_203/IMG_5212.jpg','media/pictures_space/room_203/IMG_5892.jpg','media/pictures_space/room_203/IMG_5906.jpg','media/pictures_space/room_203/IMG_5915.jpg','media/pictures_space/room_203/IMG_6015.jpg'] },
+  { name: 'Room 301', imgs: ['media/pictures_space/room_301/IMG_0966.jpg','media/pictures_space/room_301/IMG_0941.jpg','media/pictures_space/room_301/IMG_0946.jpg','media/pictures_space/room_301/IMG_0956.jpg','media/pictures_space/room_301/IMG_0957.jpg','media/pictures_space/room_301/IMG_5218.jpg','media/pictures_space/room_301/IMG_5219.jpg','media/pictures_space/room_301/IMG_5231.jpg','media/pictures_space/room_301/IMG_5237.jpg','media/pictures_space/room_301/IMG_5238.jpg','media/pictures_space/room_301/IMG_5241.jpg','media/pictures_space/room_301/IMG_5249.jpg','media/pictures_space/room_301/IMG_5250.jpg','media/pictures_space/room_301/IMG_5253.jpg','media/pictures_space/room_301/IMG_5256.jpg','media/pictures_space/room_301/IMG_5258.jpg','media/pictures_space/room_301/IMG_5261.jpg','media/pictures_space/room_301/IMG_5263.jpg','media/pictures_space/room_301/IMG_5264.jpg','media/pictures_space/room_301/IMG_5271.jpg','media/pictures_space/room_301/IMG_5277.jpg','media/pictures_space/room_301/IMG_5290.jpg','media/pictures_space/room_301/IMG_5295.jpg','media/pictures_space/room_301/IMG_5305.jpg','media/pictures_space/room_301/IMG_5314.jpg','media/pictures_space/room_301/IMG_5372.jpg','media/pictures_space/room_301/IMG_5373.jpg','media/pictures_space/room_301/IMG_5375.jpg','media/pictures_space/room_301/IMG_5385.jpg','media/pictures_space/room_301/IMG_5386.jpg','media/pictures_space/room_301/IMG_5395.jpg','media/pictures_space/room_301/IMG_5399.jpg','media/pictures_space/room_301/IMG_5615.jpg','media/pictures_space/room_301/IMG_6043.jpg'] },
 ];
 let curGallery = 0, curIdx = 0;
 
@@ -297,6 +283,58 @@ document.querySelectorAll('.room-block').forEach((card, i) => {
       'about-slide', 'May Home interior', 5500,
       'media/pictures_space/common_space/IMG_5102.jpg'
     );
+  });
+})();
+
+/* ── COMMON SPACES FLIP GRID ───────────────────────── */
+/* Each of the 8 grid cells flips like a card, revealing the next photo from
+   media/pictures_space/common_space/. Cells flip on staggered timers so the
+   whole pool of photos surfaces gradually rather than all at once. */
+(function initCommonSpaceFlipGrid() {
+  const grid = document.getElementById('commonSpaceGrid');
+  if (!grid) return;
+
+  const COMMON_SPACE_IMAGES = [
+    'IMG_5637.jpg','IMG_5423.jpg','IMG_5972.jpg','IMG_5542.jpg','IMG_5634.jpg',
+    'IMG_5546.jpg','IMG_5988.jpg','IMG_5143.jpg','IMG_5380.jpg','IMG_5244-2.jpg',
+    'IMG_5948.jpg','IMG_5961.jpg','IMG_5535-2.jpg','IMG_5244.jpg','IMG_5247.jpg',
+    'IMG_5535.jpg','IMG_5125.jpg','IMG_5322.jpg','IMG_5646.jpg','IMG_5120.jpg',
+    'IMG_5122.jpg','IMG_5452.jpg','IMG_6007.jpg','IMG_5080.jpg','IMG_5311.jpg',
+    'IMG_5111.jpg','IMG_5299.jpg','IMG_5302.jpg','IMG_2875.jpg','IMG_5117.jpg',
+    'IMG_5102.jpg','IMG_5165.jpg','IMG_5415.jpg','IMG_5978.jpg','IMG_5985.jpg',
+    'IMG_5604.jpg','IMG_5410.jpg','IMG_5404.jpg','IMG_5982.jpg','IMG_5954.jpg',
+    'IMG_5405.jpg',
+  ].map(f => `media/pictures_space/common_space/${f}`);
+
+  const shuffled = COMMON_SPACE_IMAGES.slice();
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+
+  const cells = Array.from(grid.querySelectorAll('.flip-cell'));
+  const pools = cells.map(() => []);
+  shuffled.forEach((src, i) => pools[i % cells.length].push(src));
+
+  cells.forEach((cell, i) => {
+    const pool = pools[i];
+    if (pool.length === 0) return;
+    const inner = cell.querySelector('.flip-inner');
+    const front = cell.querySelector('.flip-front');
+    const back = cell.querySelector('.flip-back');
+    front.src = pool[0];
+
+    let showingFront = true;
+    let nextIndex = 1 % pool.length;
+    if (pool.length === 1) return;
+
+    setInterval(() => {
+      const hiddenFace = showingFront ? back : front;
+      hiddenFace.src = pool[nextIndex];
+      inner.classList.toggle('flipped');
+      showingFront = !showingFront;
+      nextIndex = (nextIndex + 1) % pool.length;
+    }, 9000 + i * 1400);
   });
 })();
 
