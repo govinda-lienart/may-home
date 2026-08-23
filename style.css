@@ -341,17 +341,33 @@ img { display: block; max-width: 100%; }
   gap: 0.6rem;
   width: 200px;
   border-radius: 999px;
+  animation: btnBreathe 2.6s ease-in-out infinite;
 }
 
 .btn-whatsapp {
   background: #25d366;
 }
-.btn-whatsapp:hover { background: #1ebe59; }
+.btn-whatsapp:hover { background: #1ebe59; transform: translateY(-2px); }
 
 .btn-zalo {
   background: #0068ff;
+  animation-delay: 0.3s;
 }
-.btn-zalo:hover { background: #0052cc; }
+.btn-zalo:hover { background: #0052cc; transform: translateY(-2px); }
+
+@keyframes btnBreathe {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 0 rgba(0,0,0,0); }
+  50% { transform: scale(1.045); box-shadow: 0 6px 18px rgba(0,0,0,0.18); }
+}
+
+.btn-whatsapp:hover,
+.btn-zalo:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-whatsapp, .btn-zalo { animation: none; }
+}
 
 .zalo-mobile-link { display: none; }
 .zalo-desktop-btn { display: inline-flex; }
