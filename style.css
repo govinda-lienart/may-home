@@ -508,7 +508,7 @@ h2 {
   grid-column: span 2;
   display: grid;
   grid-template-columns: 55% 45%;
-  height: 400px;
+  height: 440px;
   background: #120a02;
   border-radius: 6px;
   overflow: hidden;
