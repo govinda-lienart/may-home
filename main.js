@@ -215,16 +215,14 @@ document.querySelectorAll('.room-block').forEach((card, i) => {
   card.addEventListener('keydown', e => { if (e.key === 'Enter') openGallery(i); });
 });
 
-/* ── HERO SLIDESHOW ─────────────────────────────── */
+/* ── HERO / ABOUT SLIDESHOWS ───────────────────────── */
 /* Drop images named hero-1.jpg, hero-2.jpg, hero-3.jpg... (or .jpeg/.png/.webp)
-   into media/hero/ — they're picked up automatically, no code changes needed. */
-(function initHeroSlideshow() {
-  const container = document.getElementById('heroSlideshow');
-  if (!container) return;
-
+   into media/hero/ — they're picked up automatically, no code changes needed.
+   The same pool feeds the hero banner and the two About-section frames, each
+   showing the images in a different rotation so they don't repeat in sync. */
+(function initSlideshows() {
   const MAX_SLIDES = 50;
   const EXTENSIONS = ['jpg', 'jpeg', 'png', 'webp'];
-  const SLIDE_DURATION = 6000; // ms each image stays fully visible
 
   function probeImage(index) {
     return new Promise(resolve => {
@@ -241,32 +239,64 @@ document.querySelectorAll('.room-block').forEach((card, i) => {
     });
   }
 
-  Promise.all(
-    Array.from({ length: MAX_SLIDES }, (_, i) => probeImage(i + 1))
-  ).then(results => {
-    const sources = results.filter(Boolean);
+  function rotate(arr, n) {
+    if (arr.length === 0) return arr;
+    const offset = n % arr.length;
+    return arr.slice(offset).concat(arr.slice(0, offset));
+  }
+
+  function buildSlideshow(container, sources, slideClass, alt, duration, fallbackSrc) {
+    if (!container) return;
     if (sources.length === 0) {
-      container.innerHTML = '<img src="media/pictures_space/room_101/IMG_5067.jpg" alt="Mayhome Homestay" class="hero-slide active" />';
+      if (fallbackSrc) {
+        container.innerHTML = `<img src="${fallbackSrc}" alt="${alt}" class="${slideClass} active" />`;
+      }
       return;
     }
 
     sources.forEach((src, i) => {
       const img = document.createElement('img');
       img.src = src;
-      img.alt = 'Mayhome Homestay';
-      img.className = 'hero-slide' + (i === 0 ? ' active' : '');
+      img.alt = alt;
+      img.className = slideClass + (i === 0 ? ' active' : '');
       container.appendChild(img);
     });
 
     if (sources.length === 1) return;
 
-    const slides = container.querySelectorAll('.hero-slide');
+    const slides = container.querySelectorAll('.' + slideClass);
     let current = 0;
     setInterval(() => {
       slides[current].classList.remove('active');
       current = (current + 1) % slides.length;
       slides[current].classList.add('active');
-    }, SLIDE_DURATION);
+    }, duration);
+  }
+
+  Promise.all(
+    Array.from({ length: MAX_SLIDES }, (_, i) => probeImage(i + 1))
+  ).then(results => {
+    const sources = results.filter(Boolean);
+    for (let i = sources.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [sources[i], sources[j]] = [sources[j], sources[i]];
+    }
+
+    buildSlideshow(
+      document.getElementById('heroSlideshow'), sources,
+      'hero-slide', 'Mayhome Homestay', 6000,
+      'media/pictures_space/room_101/IMG_5067.jpg'
+    );
+    buildSlideshow(
+      document.getElementById('aboutSlideMain'), rotate(sources, Math.floor(sources.length / 3)),
+      'about-slide', 'May Home common space', 5000,
+      'media/pictures_space/common_space/IMG_5111.jpg'
+    );
+    buildSlideshow(
+      document.getElementById('aboutSlideFloat'), rotate(sources, Math.floor(sources.length * 2 / 3)),
+      'about-slide', 'May Home interior', 5500,
+      'media/pictures_space/common_space/IMG_5102.jpg'
+    );
   });
 })();
 
