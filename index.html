@@ -24,7 +24,6 @@
     <div class="nav-links">
       <a href="#rooms" data-i18n="nav.rooms">Rooms</a>
       <a href="#location" data-i18n="nav.location">Location</a>
-      <a href="#faq" data-i18n="nav.faq">FAQ</a>
       <a href="#contact" class="nav-cta" data-i18n="nav.book">Book a Stay</a>
       <a href="https://www.instagram.com/mayhome_hoian/" class="nav-ig" target="_blank" rel="noopener" aria-label="Instagram">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
@@ -41,7 +40,6 @@
   <div class="nav-mobile" id="nav-mobile">
     <a href="#rooms" onclick="closeMenu()" data-i18n="nav.rooms">Rooms</a>
     <a href="#location" onclick="closeMenu()" data-i18n="nav.location">Location</a>
-    <a href="#faq" onclick="closeMenu()" data-i18n="nav.faq">FAQ</a>
     <a href="#contact" onclick="closeMenu()" data-i18n="nav.book">Book a Stay</a>
     <div class="lang-switch lang-switch-mobile">
       <button class="lang-btn active" id="btn-en-m" onclick="setLang('en')">🇬🇧 EN</button>
@@ -285,128 +283,6 @@
         <div class="flip-cell" data-area="f"><div class="flip-inner"><img class="flip-face flip-front" alt="" /><img class="flip-face flip-back" alt="" /></div></div>
         <div class="flip-cell" data-area="g"><div class="flip-inner"><img class="flip-face flip-front" alt="" /><img class="flip-face flip-back" alt="" /></div></div>
         <div class="flip-cell" data-area="h"><div class="flip-inner"><img class="flip-face flip-front" alt="" /><img class="flip-face flip-back" alt="" /></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section faq-section" id="faq">
-    <div class="container">
-      <span class="label" data-i18n="faq.label">Questions</span>
-      <h2 class="faq-title" data-i18n="faq.title">Everything you <em>need to know</em></h2>
-      <div class="faq-grid">
-
-        <div class="faq-col">
-          <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">
-              <span data-i18n="faq.q1">Is the WiFi fast enough for remote work?</span>
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-a"><p data-i18n="faq.a1">Yes — high-speed fibre WiFi is included in the rent and runs throughout the whole home. It has been reliably used for video calls, design work, and large file uploads. You can test it yourself on arrival before committing to your stay.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">
-              <span data-i18n="faq.q2">What's the minimum stay?</span>
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-a"><p data-i18n="faq.a2">The minimum stay is one month. May Home is designed for people who want to actually settle in — to get to know the neighbourhood, find a favourite café, and feel genuinely at home. Short stays occasionally open up; send an enquiry and ask.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">
-              <span data-i18n="faq.q3">Can I extend my stay once I'm here?</span>
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-a"><p data-i18n="faq.a3">Absolutely — most guests do. Just let us know at least two weeks before your current agreement ends and we'll confirm availability. Long-term stays (3+ months) are especially welcomed and we're happy to discuss adjusted terms.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">
-              <span data-i18n="faq.q4">What's included in the monthly rent?</span>
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-a"><p data-i18n="faq.a4">Your room, hotel-quality linens and towels, high-speed WiFi, water utilities, and access to all shared spaces (living room, kitchen, garden). Electricity is metered separately and billed by usage — you only pay for what you use.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">
-              <span data-i18n="faq.q5">Is it quiet enough for focused work?</span>
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-a"><p data-i18n="faq.a5">This is something guests mention most. Ha My moves at a gentle pace — no tourist crowds, no blaring music. The home has a house guideline of no noise after 10pm. It's a genuinely calm place to think and create.</p></div>
-          </div>
-        </div>
-
-        <div class="faq-col">
-          <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">
-              <span data-i18n="faq.q6">How do I secure a room?</span>
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-a"><p data-i18n="faq.a6">Send an enquiry and we'll respond within 24 hours. To secure your room, a refundable security deposit (50% of one month's rent) is due within 72 hours of confirmation. Your first month's rent is then due before move-in. The deposit is fully returned at checkout.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">
-              <span data-i18n="faq.q7">What are the local food and transport options?</span>
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-a"><p data-i18n="faq.a7">Ha My has a small morning market and local cafés within a 5-minute walk. A bicycle or motorbike is the best way to get around and can be arranged. Hoi An Old Town, beaches, and Đà Nẵng airport are all easily accessible.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">
-              <span data-i18n="faq.q8">Can I receive guests or visitors?</span>
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-a"><p data-i18n="faq.a8">Yes, with prior notice to the host. Overnight guests should be mentioned in advance out of respect for other residents. Day visitors are generally no issue at all.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">
-              <span data-i18n="faq.q9">Do you provide airport pickup?</span>
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-a"><p data-i18n="faq.a9">Yes — we can arrange a pickup from Đà Nẵng International Airport to May Home at an additional cost. Just include your arrival details in your enquiry and we'll sort everything out before you land.</p></div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" onclick="toggleFaq(this)">
-              <span data-i18n="faq.q10">Can I use the washing machine?</span>
-              <span class="faq-icon">+</span>
-            </button>
-            <div class="faq-a"><p data-i18n="faq.a10">Yes, there is a washing machine available for all guests. A small additional fee applies per use to cover water and electricity costs. Your host will share the current rate on arrival — it's very fairly priced.</p></div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW BOOKING WORKS -->
-  <section class="section process-section">
-    <div class="container">
-      <span class="label center-label" data-i18n="process.label">The Process</span>
-      <h2 class="center" data-i18n="process.title">How Booking Works</h2>
-      <div class="process-grid">
-
-        <div class="process-card">
-          <div class="process-num">01</div>
-          <h3 data-i18n="process.h1">Enquire &amp; Get Confirmed</h3>
-          <p data-i18n="process.p1">Submit your details and preferred dates. We confirm availability and send your booking confirmation within 24 hours.</p>
-        </div>
-
-        <div class="process-card">
-          <div class="process-num">02</div>
-          <h3 data-i18n="process.h2">Pay Security Deposit</h3>
-          <p data-i18n="process.p2">Pay your refundable security deposit within 72 hours of confirmation to secure your room. Fully returned at checkout.</p>
-        </div>
-
-        <div class="process-card">
-          <div class="process-num">03</div>
-          <h3 data-i18n="process.h3">Pay First Month's Rent</h3>
-          <p data-i18n="process.p3">Pay your first month's rent before your move-in date. We'll send you the payment link once your deposit is confirmed.</p>
-        </div>
-
-        <div class="process-card">
-          <div class="process-num">04</div>
-          <h3 data-i18n="process.h4">Move In &amp; Stay</h3>
-          <p data-i18n="process.p4">Monthly rent is due one month from your move-in date, recurring on the same date each month. Your security deposit is returned in full at checkout.</p>
-        </div>
-
       </div>
     </div>
   </section>

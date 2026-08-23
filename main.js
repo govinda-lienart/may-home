@@ -39,22 +39,6 @@ const translations = {
     'loc.h3': 'Hoi An Old Town', 'loc.d3': '10 min by motorbike', 'loc.p3': 'Lanterns, ancient streets, tailor shops, and the best bowl of cao lầu you\'ll ever taste.',
     'loc.h4': 'Da Nang City', 'loc.d4': '10 min by motorbike', 'loc.p4': 'International airport, Dragon Bridge, city restaurants, and everything you might need.',
     'gallery.label': 'Common Areas', 'gallery.title': 'Common Spaces',
-    'process.label': 'The Process', 'process.title': 'How Booking Works',
-    'process.h1': 'Enquire &amp; Get Confirmed', 'process.p1': 'Submit your details and preferred dates. We confirm availability and send your booking confirmation within 24 hours.',
-    'process.h2': 'Pay Security Deposit', 'process.p2': 'Pay your refundable security deposit within 72 hours of confirmation to secure your room. Fully returned at checkout.',
-    'process.h3': "Pay First Month's Rent", 'process.p3': "Pay your first month's rent before your move-in date. We'll send you the payment link once your deposit is confirmed.",
-    'process.h4': 'Move In &amp; Stay', 'process.p4': 'Monthly rent is due one month from your move-in date, recurring on the same date each month. Your security deposit is returned in full at checkout.',
-    'faq.label': 'Questions', 'faq.title': 'Everything you <em>need to know</em>',
-    'faq.q1': 'Is the WiFi fast enough for remote work?', 'faq.a1': 'Yes — high-speed fibre WiFi is included in the rent and runs throughout the whole home. It has been reliably used for video calls, design work, and large file uploads. You can test it yourself on arrival before committing to your stay.',
-    'faq.q2': "What's the minimum stay?", 'faq.a2': "The minimum stay is one month. May Home is designed for people who want to actually settle in — to get to know the neighbourhood, find a favourite café, and feel genuinely at home. Short stays occasionally open up; send an enquiry and ask.",
-    'faq.q3': "Can I extend my stay once I'm here?", 'faq.a3': "Absolutely — most guests do. Just let us know at least two weeks before your current agreement ends and we'll confirm availability. Long-term stays (3+ months) are especially welcomed and we're happy to discuss adjusted terms.",
-    'faq.q4': "What's included in the monthly rent?", 'faq.a4': 'Your room, hotel-quality linens and towels, high-speed WiFi, water utilities, and access to all shared spaces (living room, kitchen, garden). Electricity is metered separately and billed by usage — you only pay for what you use.',
-    'faq.q5': 'Is it quiet enough for focused work?', 'faq.a5': "This is something guests mention most. Ha My moves at a gentle pace — no tourist crowds, no blaring music. The home has a house guideline of no noise after 10pm. It's a genuinely calm place to think and create.",
-    'faq.q6': 'How do I secure a room?', 'faq.a6': "Send an enquiry and we'll respond within 24 hours. To secure your room, a refundable security deposit (50% of one month's rent) is due within 72 hours of confirmation. Your first month's rent is then due before move-in. The deposit is fully returned at checkout.",
-    'faq.q7': 'What are the local food and transport options?', 'faq.a7': "Ha My has a small morning market and local cafés within a 5-minute walk. A bicycle or motorbike is the best way to get around and can be arranged. Hoi An Old Town, beaches, and Đà Nẵng airport are all easily accessible.",
-    'faq.q8': 'Can I receive guests or visitors?', 'faq.a8': 'Yes, with prior notice to the host. Overnight guests should be mentioned in advance out of respect for other residents. Day visitors are generally no issue at all.',
-    'faq.q9': 'Do you provide airport pickup?', 'faq.a9': "Yes — we can arrange a pickup from Đà Nẵng International Airport to May Home at an additional cost. Just include your arrival details in your enquiry and we'll sort everything out before you land.",
-    'faq.q10': 'Can I use the washing machine?', 'faq.a10': 'Yes, there is a washing machine available for all guests. A small additional fee applies per use to cover water and electricity costs. Your host will share the current rate on arrival — it\'s very fairly priced.',
     'contact.label': 'Book your stay', 'contact.title': 'Ready to make yourself<br>at home?',
     'contact.desc': 'Message us — we usually reply within a few hours. Tell us which room caught your eye, when you\'d like to arrive, and how long you\'re thinking of staying.',
     'contact.loc': '📍 Ha My, Điện Bàn · Quảng Nam, Vietnam<br>Between Da Nang &amp; Hoi An · 1 min from the sea',
@@ -95,22 +79,6 @@ const translations = {
     'loc.h3': 'Phố cổ Hội An', 'loc.d3': '10 phút xe máy', 'loc.p3': 'Đèn lồng, phố cổ, tiệm may và tô cao lầu ngon nhất bạn từng thưởng thức.',
     'loc.h4': 'Thành phố Đà Nẵng', 'loc.d4': '10 phút xe máy', 'loc.p4': 'Sân bay quốc tế, Cầu Rồng, nhà hàng thành phố và mọi thứ bạn cần.',
     'gallery.label': 'Không Gian Chung', 'gallery.title': 'Không Gian Chung',
-    'process.label': 'Quy Trình', 'process.title': 'Cách Đặt Phòng',
-    'process.h1': 'Liên hệ &amp; Xác nhận', 'process.p1': 'Gửi thông tin và ngày mong muốn. Chúng tôi xác nhận phòng trống và gửi xác nhận đặt phòng trong vòng 24 giờ.',
-    'process.h2': 'Thanh toán tiền đặt cọc', 'process.p2': 'Thanh toán tiền đặt cọc hoàn lại trong vòng 72 giờ sau xác nhận để giữ phòng. Hoàn trả đầy đủ khi trả phòng.',
-    'process.h3': 'Thanh toán tiền thuê tháng đầu', 'process.p3': 'Thanh toán tiền thuê tháng đầu trước ngày nhận phòng. Chúng tôi sẽ gửi link thanh toán sau khi xác nhận tiền cọc.',
-    'process.h4': 'Dọn vào &amp; Tận hưởng', 'process.p4': 'Tiền thuê hàng tháng đến hạn một tháng sau ngày nhận phòng, lặp lại vào cùng ngày mỗi tháng. Tiền đặt cọc được hoàn trả đầy đủ khi trả phòng.',
-    'faq.label': 'Câu hỏi', 'faq.title': 'Tất cả những gì bạn <em>cần biết</em>',
-    'faq.q1': 'WiFi có đủ nhanh để làm việc từ xa không?', 'faq.a1': 'Có — WiFi cáp quang tốc độ cao được bao gồm trong tiền thuê và hoạt động khắp ngôi nhà. Đã được dùng ổn định cho các cuộc gọi video, thiết kế và tải file lớn. Bạn có thể tự kiểm tra khi đến trước khi cam kết lưu trú.',
-    'faq.q2': 'Thời gian lưu trú tối thiểu là bao lâu?', 'faq.a2': 'Tối thiểu một tháng. May Home được thiết kế cho những người muốn thực sự ổn định — để làm quen với khu phố, tìm quán cà phê yêu thích, và cảm thấy như ở nhà. Đôi khi có chỗ cho kỳ nghỉ ngắn hơn; hãy gửi yêu cầu và hỏi.',
-    'faq.q3': 'Tôi có thể gia hạn khi đang ở không?', 'faq.a3': 'Hoàn toàn được — hầu hết khách đều làm vậy. Chỉ cần báo trước ít nhất hai tuần trước khi hết hạn hợp đồng và chúng tôi sẽ xác nhận phòng trống. Kỳ lưu trú dài (3+ tháng) đặc biệt được chào đón.',
-    'faq.q4': 'Tiền thuê hàng tháng bao gồm những gì?', 'faq.a4': 'Phòng của bạn, khăn trải giường và khăn tắm chất lượng khách sạn, WiFi tốc độ cao, tiền nước, và quyền sử dụng tất cả không gian chung (phòng khách, bếp, vườn). Điện được tính riêng theo mức sử dụng.',
-    'faq.q5': 'Có đủ yên tĩnh để làm việc tập trung không?', 'faq.a5': 'Đây là điều khách nhắc đến nhiều nhất. Hà My có nhịp sống nhẹ nhàng — không đám đông du lịch, không âm nhạc ồn ào. Nhà có quy định không gây ồn sau 10 giờ tối. Đây là nơi thực sự yên tĩnh để suy nghĩ và sáng tạo.',
-    'faq.q6': 'Làm thế nào để đặt phòng?', 'faq.a6': 'Gửi yêu cầu và chúng tôi sẽ phản hồi trong 24 giờ. Để giữ phòng, cần đặt cọc hoàn lại (50% tiền thuê một tháng) trong vòng 72 giờ sau khi xác nhận. Tiền thuê tháng đầu tiên đến hạn trước khi nhận phòng. Tiền đặt cọc được hoàn trả đầy đủ khi trả phòng.',
-    'faq.q7': 'Các lựa chọn ăn uống và di chuyển địa phương như thế nào?', 'faq.a7': 'Hà My có chợ sáng nhỏ và các quán cà phê địa phương trong vòng 5 phút đi bộ. Xe đạp hoặc xe máy là cách di chuyển tốt nhất và có thể được sắp xếp. Phố cổ Hội An, bãi biển và sân bay Đà Nẵng đều dễ dàng tiếp cận.',
-    'faq.q8': 'Tôi có thể tiếp khách không?', 'faq.a8': 'Có, nhưng cần báo trước cho chủ nhà. Khách ngủ qua đêm cần được đề cập trước để tôn trọng cư dân khác. Khách thăm ban ngày thường không có vấn đề gì.',
-    'faq.q9': 'Có dịch vụ đón sân bay không?', 'faq.a9': 'Có — chúng tôi có thể sắp xếp đón từ Sân bay Quốc tế Đà Nẵng về May Home với chi phí thêm. Chỉ cần ghi thông tin đến trong yêu cầu của bạn và chúng tôi sẽ sắp xếp tất cả trước khi bạn đến.',
-    'faq.q10': 'Tôi có thể dùng máy giặt không?', 'faq.a10': 'Có, có máy giặt dành cho tất cả khách. Một khoản phí nhỏ được áp dụng cho mỗi lần sử dụng để trang trải chi phí nước và điện. Chủ nhà sẽ thông báo mức giá hiện tại khi bạn đến — rất hợp lý.',
     'contact.label': 'Đặt phòng', 'contact.title': 'Sẵn sàng cảm thấy<br>như ở nhà chưa?',
     'contact.desc': 'Nhắn tin cho chúng tôi — chúng tôi thường trả lời trong vài giờ. Cho chúng tôi biết phòng nào thu hút bạn, khi nào bạn muốn đến và bạn dự định ở bao lâu.',
     'contact.loc': '📍 Hà My, Điện Bàn · Quảng Nam, Việt Nam<br>Giữa Đà Nẵng &amp; Hội An · 1 phút từ biển',
@@ -144,12 +112,6 @@ function setLang(lang) {
 
   document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
   document.querySelectorAll(`#btn-${lang}, #btn-${lang}-m`).forEach(btn => btn.classList.add('active'));
-}
-
-/* ── FAQ TOGGLE ─────────────────────────────────── */
-function toggleFaq(btn) {
-  const item = btn.closest('.faq-item');
-  item.classList.toggle('open');
 }
 
 /* ── GALLERIES ──────────────────────────────────── */
