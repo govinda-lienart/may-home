@@ -1,6 +1,18 @@
 /* ─── RESET & BASE ─────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 :root {
   --amber:   #c8901a;
   --amber-l: #f0c85a;
@@ -387,7 +399,7 @@ img { display: block; max-width: 100%; }
   margin-bottom: 0.75rem;
 }
 .center-label { text-align: center; }
-.light-label { color: rgba(255,220,140,0.8); }
+.light-label { color: rgba(255,255,255,0.85); }
 
 h2 {
   font-size: clamp(1.9rem, 4vw, 2.8rem);
@@ -822,6 +834,29 @@ h2 {
   font-size: 0.93rem;
   color: var(--muted);
   line-height: 1.7;
+}
+
+.loc-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 1.75rem;
+  padding: 1.5rem 1.75rem;
+  background: transparent;
+  border: 1px solid rgba(46,31,15,0.14);
+  border-radius: 4px;
+}
+
+.loc-note-icon {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  flex-shrink: 0;
+}
+
+.loc-note p {
+  font-size: 0.93rem;
+  color: var(--muted);
+  line-height: 1.75;
 }
 
 /* ─── PHOTO GRID ────────────────────────────────── */

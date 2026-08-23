@@ -38,6 +38,7 @@ const translations = {
     'loc.h2': 'An Bang Beach', 'loc.d2': '8 min by motorbike', 'loc.p2': 'One of Vietnam\'s most beloved beaches — beach bars, sunbeds, fresh seafood, and clear water.',
     'loc.h3': 'Hoi An Old Town', 'loc.d3': '10 min by motorbike', 'loc.p3': 'Lanterns, ancient streets, tailor shops, and the best bowl of cao lầu you\'ll ever taste.',
     'loc.h4': 'Da Nang City', 'loc.d4': '10 min by motorbike', 'loc.p4': 'International airport, Dragon Bridge, city restaurants, and everything you might need.',
+    'loc.note': 'Everything you need is within a 5-minute walk. A local market for fresh produce and daily essentials each morning, a convenience store for the small things you forgot to pack, and a gas station just around the corner. Mayhome keeps you close to comfort without ever feeling far from home.',
     'gallery.label': 'Common Areas', 'gallery.title': 'Common Spaces',
     'contact.label': 'Book your stay', 'contact.title': 'Ready to make yourself<br>at home?',
     'contact.desc': 'Message us — we usually reply within a few hours. Tell us which room caught your eye, when you\'d like to arrive, and how long you\'re thinking of staying.',
@@ -78,6 +79,7 @@ const translations = {
     'loc.h2': 'Bãi biển An Bàng', 'loc.d2': '8 phút xe máy', 'loc.p2': 'Một trong những bãi biển được yêu thích nhất Việt Nam — quán bar bãi biển, ghế tắm nắng, hải sản tươi và nước trong xanh.',
     'loc.h3': 'Phố cổ Hội An', 'loc.d3': '10 phút xe máy', 'loc.p3': 'Đèn lồng, phố cổ, tiệm may và tô cao lầu ngon nhất bạn từng thưởng thức.',
     'loc.h4': 'Thành phố Đà Nẵng', 'loc.d4': '10 phút xe máy', 'loc.p4': 'Sân bay quốc tế, Cầu Rồng, nhà hàng thành phố và mọi thứ bạn cần.',
+    'loc.note': 'Mọi thứ bạn cần chỉ cách 5 phút đi bộ. Một khu chợ địa phương bán đồ tươi và nhu yếu phẩm mỗi sáng, một cửa hàng tiện lợi cho những thứ nhỏ bạn quên mang theo, và một cây xăng ngay góc phố. Mayhome giúp bạn luôn gần sự tiện nghi mà không bao giờ cảm thấy xa nhà.',
     'gallery.label': 'Không Gian Chung', 'gallery.title': 'Không Gian Chung',
     'contact.label': 'Đặt phòng', 'contact.title': 'Sẵn sàng cảm thấy<br>như ở nhà chưa?',
     'contact.desc': 'Nhắn tin cho chúng tôi — chúng tôi thường trả lời trong vài giờ. Cho chúng tôi biết phòng nào thu hút bạn, khi nào bạn muốn đến và bạn dự định ở bao lâu.',
@@ -284,6 +286,7 @@ document.querySelectorAll('.room-block').forEach((card, i) => {
     const front = cell.querySelector('.flip-front');
     const back = cell.querySelector('.flip-back');
     front.src = pool[0];
+    front.alt = 'Mayhome Homestay common space';
 
     let showingFront = true;
     let nextIndex = 1 % pool.length;
@@ -292,6 +295,7 @@ document.querySelectorAll('.room-block').forEach((card, i) => {
     setInterval(() => {
       const hiddenFace = showingFront ? back : front;
       hiddenFace.src = pool[nextIndex];
+      hiddenFace.alt = 'Mayhome Homestay common space';
       inner.classList.toggle('flipped');
       showingFront = !showingFront;
       nextIndex = (nextIndex + 1) % pool.length;
