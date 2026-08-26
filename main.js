@@ -3,7 +3,7 @@ const translations = {
   en: {
     'nav.rooms': 'Rooms', 'nav.location': 'Location', 'nav.book': 'Book a Stay',
     'hero.eyebrow': 'Ha My · Between Da Nang &amp; Hoi An',
-    'hero.desc': 'A cozy homestay for monthly stays between old Hội An and vibrant Đà Nẵng, beside the sea.',
+    'hero.desc': 'A cozy homestay for monthly stays between old Hội An<br>and vibrant Đà Nẵng, beside the sea.',
     'hero.cta1': 'Discover Rooms', 'hero.cta2': 'Get in Touch',
     'about.label': 'Welcome to MayHome.',
     'about.title': 'Not a hotel.<br><em>A home.</em>',
@@ -47,7 +47,7 @@ const translations = {
   vi: {
     'nav.rooms': 'Phòng', 'nav.location': 'Vị trí', 'nav.book': 'Đặt phòng',
     'hero.eyebrow': 'Hà My · Giữa Đà Nẵng &amp; Hội An',
-    'hero.desc': 'Một homestay ấm cúng cho những kỳ ở dài ngày giữa phố cổ Hội An và Đà Nẵng sôi động, ngay cạnh biển.',
+    'hero.desc': 'Một homestay ấm cúng cho những kỳ ở dài ngày giữa phố cổ Hội An<br>và Đà Nẵng sôi động, ngay cạnh biển.',
     'hero.cta1': 'Khám phá phòng', 'hero.cta2': 'Liên hệ',
     'about.label': 'Chào mừng đến MayHome.',
     'about.title': 'Không phải khách sạn.<br><em>Là ngôi nhà.</em>',
@@ -225,6 +225,19 @@ document.querySelectorAll('.room-block').forEach((card, i) => {
     }, duration);
   }
 
+  // Show the first hero photo immediately (it's preloaded in <head>) instead of
+  // waiting for the full probe of every hero-N slot to finish before painting.
+  const FIRST_HERO_SRC = 'media/hero/hero-1.jpg';
+  const heroContainer = document.getElementById('heroSlideshow');
+  if (heroContainer) {
+    const firstImg = document.createElement('img');
+    firstImg.src = FIRST_HERO_SRC;
+    firstImg.alt = 'Mayhome Homestay';
+    firstImg.className = 'hero-slide active';
+    firstImg.onerror = () => firstImg.remove();
+    heroContainer.appendChild(firstImg);
+  }
+
   Promise.all(
     Array.from({ length: MAX_SLIDES }, (_, i) => probeImage(i + 1))
   ).then(results => {
@@ -234,11 +247,35 @@ document.querySelectorAll('.room-block').forEach((card, i) => {
       [sources[i], sources[j]] = [sources[j], sources[i]];
     }
 
-    buildSlideshow(
-      document.getElementById('heroSlideshow'), sources,
-      'hero-slide', 'Mayhome Homestay', 6000,
-      'media/pictures_space/room_101/IMG_5067.jpg'
-    );
+    if (heroContainer) {
+      const alreadyShown = heroContainer.querySelector('.hero-slide.active');
+      const remaining = sources.filter(s => s !== FIRST_HERO_SRC);
+      if (alreadyShown) {
+        remaining.forEach(src => {
+          const img = document.createElement('img');
+          img.src = src;
+          img.alt = 'Mayhome Homestay';
+          img.className = 'hero-slide';
+          heroContainer.appendChild(img);
+        });
+        const slides = heroContainer.querySelectorAll('.hero-slide');
+        if (slides.length > 1) {
+          let current = 0;
+          setInterval(() => {
+            slides[current].classList.remove('active');
+            current = (current + 1) % slides.length;
+            slides[current].classList.add('active');
+          }, 6000);
+        }
+      } else {
+        buildSlideshow(
+          heroContainer, sources,
+          'hero-slide', 'Mayhome Homestay', 6000,
+          'media/pictures_space/room_101/IMG_5067.jpg'
+        );
+      }
+    }
+
     buildSlideshow(
       document.getElementById('aboutSlideMain'), rotate(sources, Math.floor(sources.length / 3)),
       'about-slide', 'May Home common space', 5000,
