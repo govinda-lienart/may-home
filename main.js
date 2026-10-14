@@ -227,7 +227,7 @@ document.querySelectorAll('.room-block').forEach((card, i) => {
 
   // Show the first hero photo immediately (it's preloaded in <head>) instead of
   // waiting for the full probe of every hero-N slot to finish before painting.
-  const FIRST_HERO_SRC = 'media/hero/hero-1.jpg';
+  const FIRST_HERO_SRC = 'media/hero/hero-2.jpg';
   const heroContainer = document.getElementById('heroSlideshow');
   if (heroContainer) {
     const firstImg = document.createElement('img');
