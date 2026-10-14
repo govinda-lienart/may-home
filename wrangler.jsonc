@@ -1,0 +1,32 @@
+{
+  "$schema": "https://unpkg.com/wrangler@4.151.0/config-schema.json",
+  "name": "mayhome",
+  // Huyen's Cloudflare account (same as beecurio); set explicitly so deploys never land in another account
+  "account_id": "2e34831764112831cfde5481b0e241f6",
+  "compatibility_date": "2025-07-01",
+  // Handles /office/api/*; everything else is served as static files (see .assetsignore)
+  "main": "src/index.js",
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS",
+    // the homepage goes through the Worker so it can swap in the prices saved in the Office
+    "run_worker_first": ["/", "/index.html", "/google706281c70aaee8e2.html"]
+  },
+  // Preview URL (mayhome.<sub>.workers.dev) while may-home.vn still points to Vercel.
+  // Safe: /office/api re-checks the Access login token, which a workers.dev request never has.
+  "workers_dev": true,
+  "preview_urls": false,
+  // Room prices (key "prices")
+  "kv_namespaces": [
+    { "binding": "PRICES", "id": "dabfd4ba7266402ea070cc30c8553ba6" }
+  ],
+  "vars": {
+    // Cloudflare Access app "Mayhome Office"; the Worker re-checks its login token
+    "ACCESS_TEAM_DOMAIN": "https://beecurio.cloudflareaccess.com",
+    "ACCESS_AUD": ""
+  },
+  "routes": [
+    { "pattern": "may-home.vn", "custom_domain": true },
+    { "pattern": "www.may-home.vn", "custom_domain": true }
+  ]
+}

@@ -1,0 +1,12 @@
+# Files that must never be served as part of the website
+.git
+.gitignore
+.assetsignore
+.DS_Store
+.wrangler
+.dev.vars
+node_modules
+src
+wrangler.jsonc
+*.md
+media/future_sections
